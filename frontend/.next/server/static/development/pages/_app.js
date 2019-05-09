@@ -118,65 +118,137 @@ var _jsxFileName = "C:\\Users\\User\\Desktop\\Advanced-React\\store-wheels\\fron
 var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.header.withConfig({
   displayName: "Header__StyledHeader",
   componentId: "sc-2cpreo-0"
-})([".bar{display:flex;justify-content:space-between;padding:1rem;@media (max-width:700px){flex-direction:column;}}"]);
+})([".bar{display:flex;justify-content:space-between;background-color:", ";padding:1rem;@media (max-width:700px){flex-direction:column;}}.encourage-block{padding-left:3rem;padding-bottom:4rem;display:flex;justify-content:center;align-items:center;background-color:", ";position:relative;.encourage-words{display:flex;justify-content:center;align-items:center;h1{margin:0;font-style:normal;font-weight:normal;font-size:40px;line-height:49px;@media(max-width:1100px){padding:2.5rem 0 2.5rem 2.5rem;}}}.arrow-next-block{background:none;border:none;cursor:pointer;outline:none;height:fit-content;margin-top:140px;@media(max-width:592px){margin-top:0;}}.wave{background-image:url(../static/wave.svg);background-repeat:no-repeat;width:100%;height:78px;position:absolute;top:calc(100% - 78px);left:0;}.main-car{@media(max-width:1100px){width:500px;}@media(max-width:850px){width:80%}}@media(max-width:1100px){padding-left:0;}@media(max-width:850px){flex-wrap:wrap;}}"], function (props) {
+  return props.theme.grey;
+}, function (props) {
+  return props.theme.grey;
+});
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 78
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 79
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 80
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 81
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "../static/logo.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 81
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 83
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "encourage-block",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "encourage-words",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
+    },
+    __self: this
+  }, "Looking for stylish wheels", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
+    },
+    __self: this
+  }), "for your car?", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
+    },
+    __self: this
+  }), "So, Let\u2019s go!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "arrow-next-block",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "../static/arrow.svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "main-car",
+    src: "../static/gt86.png",
+    alt: "Toyota GT-86",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "wave",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 91
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sub-bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 93
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 94
     },
     __self: this
   }, "Search")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 96
     },
     __self: this
   }, "Cart"));
@@ -591,7 +663,7 @@ __webpack_require__.r(__webpack_exports__);
 var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.ul.withConfig({
   displayName: "NavStyles",
   componentId: "sc-11c0d2g-0"
-})(["margin:0;padding:0;display:flex;justify-self:end;font-size:1.5rem;@media(max-width:700px){width:100%;align-self:center;flex-direction:column;text-align:center;transition:.3s;}a{padding:1rem 2rem;display:flex;align-items:center;position:relative;text-transform:uppercase;font-weight:600;font-size:1em;background:none;border:0;cursor:pointer;color:", ";@media (max-width:700px){padding:.8rem 10px;text-align:center;justify-content:center;}}&:hover,&:focus{outline:none;}}.burger-container{position:fixed;top:2%;right:4%;z-index:999;cursor:pointer;border:none;background:none;outline:none;@media (min-width:700px){display:none;}}.burger-container .burger-line-1,.burger-container .burger-line-2,.burger-container .burger-line-3{border-radius:2px;width:35px;height:5px;background-color:", ";margin:6px 0;-webkit-transition:0.4s;transition:0.4s;}.change-burger .burger-line-1{-webkit-transform:rotate(-45deg) translate(-9px,6px);transform:rotate(-45deg) translate(-9px,6px);}.change-burger .burger-line-2{opacity:0;}.change-burger .burger-line-3{-webkit-transform:rotate(45deg) translate(-8px,-8px);transform:rotate(45deg) translate(-8px,-8px);}@media (max-width:1300px){font-size:1.6rem;}.menu{@media(min-width:700px){display:flex;}@media(max-width:700px){transition:.4s ease-in-out;position:absolute;background-color:", ";width:100%;left:0;transform:translateY(8%);a{color:white;}}@media(min-width:700px){display:flex;}}.hide-menu{@media(max-width:700px){transform:translateY(-250%);transition:.4s ease-in-out;}}}"], function (props) {
+})(["margin:0;padding:0;display:flex;justify-self:end;font-size:1.5rem;z-index:999;@media(max-width:700px){width:100%;align-self:center;flex-direction:column;text-align:center;transition:.3s;}a{padding:1rem 2rem;display:flex;align-items:center;position:relative;text-transform:uppercase;font-weight:600;font-size:1em;background:none;border:0;cursor:pointer;color:", ";@media (max-width:700px){padding:.8rem 10px;text-align:center;justify-content:center;}}&:hover,&:focus{outline:none;}}.burger-container{position:fixed;top:2%;right:4%;z-index:999;cursor:pointer;border:none;background:none;outline:none;@media (min-width:700px){display:none;}}.burger-container .burger-line-1,.burger-container .burger-line-2,.burger-container .burger-line-3{border-radius:2px;width:35px;height:5px;background-color:", ";margin:6px 0;-webkit-transition:0.4s;transition:0.4s;}.change-burger .burger-line-1{-webkit-transform:rotate(-45deg) translate(-9px,6px);transform:rotate(-45deg) translate(-9px,6px);}.change-burger .burger-line-2{opacity:0;}.change-burger .burger-line-3{-webkit-transform:rotate(45deg) translate(-8px,-8px);transform:rotate(45deg) translate(-8px,-8px);}@media (max-width:1300px){font-size:1.6rem;}.menu{@media(min-width:700px){display:flex;}@media(max-width:700px){transition:.4s ease-in-out;position:absolute;background-color:", ";width:100%;left:0;transform:translateY(8%);a{color:white;}}@media(min-width:700px){display:flex;}}.hide-menu{@media(max-width:700px){transform:translateY(-250%);transition:.4s ease-in-out;}}}"], function (props) {
   return props.theme.semiblack;
 }, function (props) {
   return props.theme.semiblack;

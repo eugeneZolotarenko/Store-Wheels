@@ -6,6 +6,7 @@ const NavStyles = styled.ul`
   display: flex;
   justify-self: end;
   font-size: 1.5rem;
+  z-index: 999;
   @media(max-width: 700px){
     width: 100%;
     align-self: center;
