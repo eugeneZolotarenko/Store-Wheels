@@ -109,16 +109,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! nprogress */ "nprogress");
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "C:\\Users\\User\\Desktop\\Advanced-React\\store-wheels\\frontend\\components\\Header.js";
 
- // import MenuButton from './MenuButton';
 
 
+
+
+
+
+next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeStart = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.start();
+};
+
+next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeComplete = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.done();
+};
+
+next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeError = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.done();
+};
 
 var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.header.withConfig({
   displayName: "Header__StyledHeader",
   componentId: "sc-2cpreo-0"
-})([".bar{display:flex;justify-content:space-between;background-color:", ";padding:1rem;@media (max-width:700px){flex-direction:column;}}.encourage-block{padding-left:3rem;padding-bottom:4rem;display:flex;justify-content:center;align-items:center;background-color:", ";position:relative;.encourage-words{display:flex;justify-content:center;align-items:center;h1{margin:0;font-style:normal;font-weight:normal;font-size:40px;line-height:49px;@media(max-width:1100px){padding:2.5rem 0 2.5rem 2.5rem;}}}.arrow-next-block{background:none;border:none;cursor:pointer;outline:none;height:fit-content;margin-top:140px;@media(max-width:592px){margin-top:0;}}.wave{background-image:url(../static/wave.svg);background-repeat:no-repeat;width:100%;height:78px;position:absolute;top:calc(100% - 78px);left:0;}.main-car{@media(max-width:1100px){width:500px;}@media(max-width:850px){width:80%}}@media(max-width:1100px){padding-left:0;}@media(max-width:850px){flex-wrap:wrap;}}"], function (props) {
+})([".bar{display:flex;justify-content:space-between;background-color:", ";padding:1rem;@media (max-width:700px){flex-direction:column;}}.encourage-block{padding-left:5rem;padding-bottom:2rem;background-color:", ";position:relative;display:flex;justify-content:center;align-items:center;.encourage-wrapper{width:1280px;display:flex;justify-content:space-between;align-items:center;.encourage-words{display:flex;justify-content:center;align-items:center;h1{margin:0;font-style:normal;font-weight:normal;font-size:38px;line-height:49px;@media(max-width:1100px){padding:1.5rem 0 3.5rem 2.5rem;font-size:35px;}}}.arrow-next-block{background:none;border:none;cursor:pointer;outline:none;height:fit-content;margin-top:140px;@media(max-width:592px){margin-top:0;}}.main-car{@media(max-width:1100px){margin:0;width:500px;}@media(max-width:850px){width:80%}}@media(max-width:1100px){padding-left:0;padding-bottom:4rem;}@media(max-width:850px){flex-wrap:wrap;justify-content:center;}@media(max-width:500px){padding-bottom:6rem;}}.wave{background-image:url(../static/wave.svg);background-repeat:no-repeat;width:100%;height:78px;position:absolute;top:calc(100% - 78px);left:0;}}"], function (props) {
   return props.theme.grey;
 }, function (props) {
   return props.theme.grey;
@@ -128,92 +146,99 @@ var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 104
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 105
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 106
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 107
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "../static/logo.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 107
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 109
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "encourage-block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 111
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "encourage-wrapper",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 112
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "encourage-words",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 113
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 114
     },
     __self: this
   }, "Looking for stylish wheels", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 114
     },
     __self: this
   }), "for your car?", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 114
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 114
     },
     __self: this
   }), "So, Let\u2019s go!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "arrow-next-block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 116
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "../static/arrow.svg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 116
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -222,33 +247,33 @@ var Header = function Header() {
     alt: "Toyota GT-86",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 117
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "wave",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 119
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sub-bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 121
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 122
     },
     __self: this
   }, "Search")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 124
     },
     __self: this
   }, "Cart"));
@@ -322,10 +347,19 @@ var Meta = function Meta() {
       lineNumber: 9
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    rel: "stylesheet",
+    type: "text/css",
+    href: "/static/nprogress.css",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
     },
     __self: this
   }, "Shop"));
@@ -798,6 +832,28 @@ module.exports = require("next/head");
 /***/ (function(module, exports) {
 
 module.exports = require("next/link");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
+
+/***/ }),
+
+/***/ "nprogress":
+/*!****************************!*\
+  !*** external "nprogress" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("nprogress");
 
 /***/ }),
 
