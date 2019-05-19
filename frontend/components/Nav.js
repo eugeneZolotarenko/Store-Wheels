@@ -20,7 +20,7 @@ class Nav extends React.Component {
     <NavStyles >
       <div className= { this.state.condition ? "menu" : "menu hide-menu" }>
         <Link href="/items">
-          <a>Items</a>
+          <a>Shop</a>
         </Link>
         <Link href="/sell">
           <a>Sell</a>
