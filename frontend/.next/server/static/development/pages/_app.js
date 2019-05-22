@@ -136,9 +136,7 @@ next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeError = function
 var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.header.withConfig({
   displayName: "Header__StyledHeader",
   componentId: "sc-2cpreo-0"
-})([".bar{display:flex;justify-content:space-between;background-color:", ";padding:1rem;@media (max-width:700px){flex-direction:column;}}.encourage-block{padding-left:5rem;padding-bottom:2rem;background-color:", ";position:relative;display:flex;justify-content:center;align-items:center;.encourage-wrapper{width:1280px;display:flex;justify-content:space-between;align-items:center;.encourage-words{display:flex;justify-content:center;align-items:center;h1{margin:0;font-style:normal;font-weight:normal;font-size:38px;line-height:49px;@media(max-width:1100px){padding:1.5rem 0 3.5rem 2.5rem;font-size:35px;}}}.arrow-next-block{background:none;border:none;cursor:pointer;outline:none;height:fit-content;margin-top:140px;@media(max-width:592px){margin-top:0;}}.main-car{@media(max-width:1100px){margin:0;width:500px;}@media(max-width:850px){width:80%}}@media(max-width:1100px){padding-left:0;padding-bottom:4rem;}@media(max-width:850px){flex-wrap:wrap;justify-content:center;}@media(max-width:500px){padding-bottom:6rem;}}.wave{background-image:url(../static/wave.svg);background-repeat:no-repeat;width:100%;height:78px;position:absolute;top:calc(100% - 78px);left:0;}}"], function (props) {
-  return props.theme.grey;
-}, function (props) {
+})([".bar{position:fixed;z-index:1000;width:100%;display:flex;justify-content:space-between;background-color:", ";padding:1rem;@media (max-width:700px){flex-direction:column;}}"], function (props) {
   return props.theme.grey;
 });
 
@@ -146,137 +144,50 @@ var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 35
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 36
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "../static/logo.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 37
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "encourage-block",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 111
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "encourage-wrapper",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 112
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "encourage-words",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 113
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 114
-    },
-    __self: this
-  }, "Looking for stylish wheels", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 114
-    },
-    __self: this
-  }), "for your car?", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 114
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 114
-    },
-    __self: this
-  }), "So, Let\u2019s go!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "arrow-next-block",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 116
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "../static/arrow.svg",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 116
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "main-car",
-    src: "../static/gt86.png",
-    alt: "Toyota GT-86",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 117
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "wave",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 39
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sub-bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 51
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 122
-    },
-    __self: this
-  }, "Search")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 124
-    },
-    __self: this
-  }, "Cart"));
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -612,7 +523,7 @@ var theme = {
   pink: '#FF268E',
   bigRadius: '30px',
   smallRadius: '10px',
-  maxWidth: '1140px'
+  maxWidth: '1210px'
 };
 var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "Page__StyledPage",
@@ -621,9 +532,7 @@ var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.wi
 var Inner = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "Page__Inner",
   componentId: "sc-4u7a64-1"
-})(["max-width:", ";margin:0 auto;padding:2rem;"], function (props) {
-  return props.theme.maxWidth;
-});
+})([""]);
 Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["injectGlobal"])(_templateObject());
 
 var Page =

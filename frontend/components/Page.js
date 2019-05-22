@@ -11,7 +11,7 @@ const theme = {
   pink: '#FF268E',
   bigRadius: '30px',
   smallRadius: '10px',
-  maxWidth: '1140px'
+  maxWidth: '1210px'
 }
 
 const StyledPage = styled.div`
@@ -19,10 +19,10 @@ const StyledPage = styled.div`
   color: black;
 `;
 const Inner = styled.div`
-  max-width: ${props => props.theme.maxWidth};
   // background: ${props => props.theme.olive};
-  margin: 0 auto;
-  padding: 2rem;
+  // max-width: ${props => props.theme.maxWidth};
+  // margin: 0 auto;
+  // padding: 2rem;
 `;
 injectGlobal`
   html {
