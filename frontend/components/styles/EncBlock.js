@@ -10,6 +10,7 @@ const EncBlock = styled.div`
     justify-content: center;
     align-items: center;
     .encourage-wrapper{
+      margin-top: 69px;
       width: 1280px;
       display: flex;
       justify-content: space-between;

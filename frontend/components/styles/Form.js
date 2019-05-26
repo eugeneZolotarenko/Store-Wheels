@@ -17,6 +17,7 @@ const Form = styled.form`
   background: rgba(0, 0, 0, 0.02);
   border: 5px solid white;
   padding: 20px;
+  padding-top: 200px;
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 600;

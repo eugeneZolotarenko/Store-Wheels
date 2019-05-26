@@ -93,7 +93,7 @@ const NavStyles = styled.ul`
       background-color: ${props => props.theme.semiblack};
       width: 100%;
       left: 0;
-      transform: translateY(8%);
+      // transform: translateY(8%);
       a{
         color: white;
       }

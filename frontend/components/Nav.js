@@ -20,19 +20,19 @@ class Nav extends React.Component {
     <NavStyles >
       <div className= { this.state.condition ? "menu" : "menu hide-menu" }>
         <Link href="/items">
-          <a>Shop</a>
+          <a onClick={ this.handleClick }>Shop</a>
         </Link>
         <Link href="/sell">
-          <a>Sell</a>
+          <a onClick={ this.handleClick }>Sell</a>
         </Link>
         <Link href="/signup">
-          <a>Sign up</a>
+          <a onClick={ this.handleClick }>Sign up</a>
         </Link>
         <Link href="/orders">
-          <a>Orders</a>
+          <a onClick={ this.handleClick }>Orders</a>
         </Link>
         <Link href="/me">
-          <a>Account</a>
+          <a onClick={ this.handleClick }>Account</a>
         </Link>
       </div>
 

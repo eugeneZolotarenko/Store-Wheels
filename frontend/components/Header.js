@@ -38,16 +38,6 @@ const Header = () => (
             </Link>
            <Nav />
         </nav>
-        {/* <div className="encourage-block">
-          <div className="encourage-wrapper">
-            <div className="encourage-words">
-              <h1>Looking for stylish wheels<br/>for your car?<br/><br/>So, Let’s go!</h1>
-            </div>
-            <button className="arrow-next-block"><img src="../static/arrow.svg"/></button>
-            <img className="main-car" src="../static/gt86.png" alt="Toyota GT-86" />
-          </div>
-          <div className="wave"></div>
-        </div> */}
         <div className="sub-bar">
            {/* <p>Search</p> */}
         </div>
