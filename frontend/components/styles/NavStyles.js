@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const NavStyles = styled.ul`
   margin: 0;
@@ -93,6 +93,7 @@ const NavStyles = styled.ul`
       background-color: ${props => props.theme.semiblack};
       width: 100%;
       left: 0;
+      margin-top: 10px;
       // transform: translateY(8%);
       a{
         color: white;

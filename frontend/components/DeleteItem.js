@@ -12,11 +12,10 @@ const DELETE_ITEM_MUTATION = gql`
 `;
 
 class DeleteItem extends Component {
-  update = cache => {
+  update = (cache, payload) => {
     // manually update the cache on the client, so it matches the server
     //  read the cache for the items we want
     const data = cache.readQuery({ query: ALL_ITEMS_QUERY });
-    console.log(data);
     // filter the deleted item out of the page
     data.items = data.items.filter(
       item => item.id !== payload.data.deleteItem.id
@@ -37,7 +36,7 @@ class DeleteItem extends Component {
         {(deleteItem, { error }) => (
           <button
             onClick={() => {
-              if (confirm("Are you sure you want to delate this item?")) {
+              if (confirm("Are you sure, you want to delete this item?")) {
                 deleteItem();
               }
             }}
