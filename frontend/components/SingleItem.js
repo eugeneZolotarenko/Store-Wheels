@@ -8,11 +8,10 @@ import Head from "next/head";
 const SingleItemStyles = styled.div`
   max-width: ${props => props.theme.maxWidth};
   margin: 0 auto;
-  padding-top: 69px;
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 69px);
   .item-image {
     width: 80%;
     height: 80%;

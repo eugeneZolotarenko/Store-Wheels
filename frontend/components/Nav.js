@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Mutation } from "react-apollo";
+import { TOGGLE_CART_MATATION } from "./Cart";
 import NavStyles from "./styles/NavStyles";
 import User from "./User";
 import Signout from "./Signout";
@@ -37,6 +39,13 @@ class Nav extends React.Component {
                     <a onClick={this.handleClick}>Account</a>
                   </Link>
                   <Signout />
+                  <Mutation mutation={TOGGLE_CART_MATATION}>
+                    {toggleCart => (
+                      <button onClick={this.handleClick} onClick={toggleCart}>
+                        My Cart
+                      </button>
+                    )}
+                  </Mutation>
                 </>
               )}
               {!me && (

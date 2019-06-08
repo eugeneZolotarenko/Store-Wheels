@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
-import styled, { ThemeProvider, injectGlobal } from 'styled-components';
-import Header from '../components/Header';
-import Meta from '../components/Meta';
-
+import React, { Component } from "react";
+import styled, { ThemeProvider, injectGlobal } from "styled-components";
+import Header from "../components/Header";
+import Meta from "../components/Meta";
 
 const theme = {
-  grey: '#C1C4C3',
-  olive: '#8BA390',
-  semiblack: '#262527',
-  pink: '#FF268E',
-  bigRadius: '30px',
-  smallRadius: '10px',
-  maxWidth: '1210px'
-}
+  grey: "#C1C4C3",
+  olive: "#8BA390",
+  semiblack: "#262527",
+  pink: "#FF268E",
+  bigRadius: "30px",
+  smallRadius: "10px",
+  maxWidth: "1210px"
+};
 
 const StyledPage = styled.div`
   background: white;
@@ -23,6 +22,7 @@ const Inner = styled.div`
   // max-width: ${props => props.theme.maxWidth};
   // margin: 0 auto;
   // padding: 2rem;
+  padding-top: 69px;
 `;
 injectGlobal`
   html {
@@ -41,7 +41,7 @@ injectGlobal`
   a{
     text-decoration: none;
   }
-`
+`;
 
 class Page extends Component {
   render() {
@@ -50,14 +50,11 @@ class Page extends Component {
         <StyledPage>
           <Meta />
           <Header />
-          <Inner>
-            {this.props.children}
-          </Inner>
+          <Inner>{this.props.children}</Inner>
         </StyledPage>
       </ThemeProvider>
-    )
+    );
   }
 }
-
 
 export default Page;
