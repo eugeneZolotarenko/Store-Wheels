@@ -8,14 +8,14 @@ const NavStyles = styled.ul`
   font-size: 1.5rem;
   z-index: 999;
   @media(max-width: 700px){
-    width: 100%;
+    width: fit-content;
     align-self: center;
     flex-direction: column;
     text-align: center;
     transition: .3s;
   }
 
-  a{
+  a, .signout-btn{
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -26,11 +26,18 @@ const NavStyles = styled.ul`
     background: none;
     border: 0;
     cursor: pointer;
+    font-family: Montserrat;
     color: ${props => props.theme.semiblack};
     @media (max-width: 700px) {
       padding: .8rem 10px;
       text-align: center;
       justify-content: center;
+    }
+  }
+  .signout-btn{
+    @media(max-width: 700px){
+    width: 100%;
+    color: white;
     }
   }
     &:hover,
@@ -41,14 +48,12 @@ const NavStyles = styled.ul`
 
   // Start Button to MENU
   .burger-container {
-    position: fixed;
-    top: 2%;
-    right: 4%;
     z-index: 999;
     cursor: pointer;
     border: none;
     background: none;
     outline: none;
+    width: fit-content;
     @media (min-width: 700px) {
       display: none;
     }
@@ -93,8 +98,7 @@ const NavStyles = styled.ul`
       background-color: ${props => props.theme.semiblack};
       width: 100%;
       left: 0;
-      margin-top: 10px;
-      // transform: translateY(8%);
+      transform: translateY(56px);
       a{
         color: white;
       }
@@ -105,7 +109,7 @@ const NavStyles = styled.ul`
   }
   .hide-menu{
     @media(max-width: 700px){
-      transform: translateY(-250%);
+      transform: translateY(-150%);
       transition: .4s ease-in-out;
       }
     }

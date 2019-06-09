@@ -4,6 +4,7 @@ import { TOGGLE_CART_MATATION } from "./Cart";
 import NavStyles from "./styles/NavStyles";
 import User from "./User";
 import Signout from "./Signout";
+import CartCount from "./CartCount";
 
 class Nav extends React.Component {
   constructor(props) {
@@ -39,13 +40,19 @@ class Nav extends React.Component {
                     <a onClick={this.handleClick}>Account</a>
                   </Link>
                   <Signout />
-                  <Mutation mutation={TOGGLE_CART_MATATION}>
+                  {/* <Mutation mutation={TOGGLE_CART_MATATION}>
                     {toggleCart => (
-                      <button onClick={this.handleClick} onClick={toggleCart}>
+                      <button onClick={toggleCart}>
                         My Cart
+                        <CartCount
+                          count={me.cart.reduce(
+                            (tally, cartItem) => tally + cartItem.quantity,
+                            0
+                          )}
+                        />
                       </button>
                     )}
-                  </Mutation>
+                  </Mutation> */}
                 </>
               )}
               {!me && (

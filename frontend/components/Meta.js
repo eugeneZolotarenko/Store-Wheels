@@ -10,6 +10,11 @@ const Meta = () => (
       href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
     <title>Shop</title>
   </Head>
