@@ -664,7 +664,7 @@ function (_Component) {
             key: item.id,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 61
+              lineNumber: 60
             },
             __self: this
           });
@@ -673,7 +673,7 @@ function (_Component) {
         page: this.props.page,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 65
         },
         __self: this
       })));
