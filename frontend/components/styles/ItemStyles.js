@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Item = styled.div`
   background: white;
@@ -37,6 +37,7 @@ const Item = styled.div`
       font-size: 1.5rem;
       font-weight: 600;
       padding: 1rem;
+      font-family: Montserrat;
     }
     *:nth-child(1){
       border-bottom-left-radius: 10px;
