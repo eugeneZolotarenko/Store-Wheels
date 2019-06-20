@@ -8,7 +8,7 @@ const stripe = require("../stripe");
 
 const Mutations = {
   async createItem(parent, args, ctx, info) {
-    // Todo: CHeck if they are logged in
+    // Check if they are logged in
     if (!ctx.request.userId) {
       throw new Error("You must be logged in to do that!");
     }
@@ -29,11 +29,26 @@ const Mutations = {
 
     return item;
   },
-  updateItem(parent, args, ctx, info) {
+  async updateItem(parent, args, ctx, info) {
     // first take a copy of the updates
     const updates = { ...args };
     // remove the ID from the updates
     delete updates.id;
+    //
+    const where = { id: args.id };
+
+    // find the item
+    const item = await ctx.db.query.item({ where }, `{ id title user {id}}`);
+
+    //  check if they own item, or have the permissions
+    const ownsItem = item.user.id === ctx.request.userId;
+    const hasPermissions = ctx.request.user.permissions.some(permission =>
+      ["ADMIN", "ITEMUPDATE"].includes(permission)
+    );
+
+    if (!ownsItem && !hasPermissions) {
+      throw new Error("You don't have permission to do that!");
+    }
     // run the update method
     return ctx.db.mutation.updateItem(
       {
@@ -229,7 +244,6 @@ const Mutations = {
     });
     // check if that item is already in user's cart
     if (existingCartItem) {
-      console.log("This item is already in their cart");
       return ctx.db.mutation.updateCartItem(
         {
           where: { id: existingCartItem.id },
