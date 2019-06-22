@@ -4,6 +4,10 @@ import gql from "graphql-tag";
 import Error from "./ErrorMessage";
 import styled from "styled-components";
 import Head from "next/head";
+import User from "./User";
+import ButtonList from "./ButtonList";
+import PriceTag from "./styles/PriceTag";
+import formatMoney from "../lib/formatMoney";
 
 const SingleItemStyles = styled.div`
   max-width: ${props => props.theme.maxWidth};
@@ -29,8 +33,31 @@ const SingleItemStyles = styled.div`
     justify-content: center;
     flex-direction: column;
     padding: 2rem 1rem;
+    box-sizing: border-box;
     h2 {
+      font-size: 2.5rem;
       text-align: center;
+    }
+    .buttonList {
+      margin: 1em 0;
+      a,
+      button {
+        background-color: ${props => props.theme.olive};
+        border: none;
+        color: white;
+        font-family: Montserrat;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 5px 10px;
+        margin: 5px;
+        transition: border, background 0.3s;
+        cursor: pointer;
+        &:hover {
+          color: white;
+          background: ${props => props.theme.pink};
+          box-shadow: ${props => props.theme.buttonShadow};
+        }
+      }
     }
   }
 `;
@@ -42,6 +69,10 @@ const SINGLE_ITEM_QUERY = gql`
       title
       description
       largeImage
+      price
+      user {
+        id
+      }
     }
   }
 `;
@@ -56,20 +87,26 @@ class SingleItem extends Component {
           if (!data.item) return <p>No Item Found for {this.props.id}</p>;
           const item = data.item;
           return (
-            <SingleItemStyles>
-              <Head>
-                <title>Stock Wheels | {item.title}</title>
-              </Head>
-              <img
-                className="item-image"
-                src={item.largeImage}
-                alt={item.title}
-              />
-              <div className="datails">
-                <h2>Viewing {item.title}</h2>
-                <p>{item.description}</p>
-              </div>
-            </SingleItemStyles>
+            <User>
+              {({ data: { me } }) => (
+                <SingleItemStyles>
+                  <Head>
+                    <title>Store Wheels | {item.title}</title>
+                  </Head>
+                  <img
+                    className="item-image"
+                    src={item.largeImage}
+                    alt={item.title}
+                  />
+                  <div className="datails">
+                    <h2>Viewing {item.title}</h2>
+                    <p>{item.description}</p>
+                    <PriceTag>{formatMoney(item.price)}</PriceTag>
+                    <ButtonList item={item} />
+                  </div>
+                </SingleItemStyles>
+              )}
+            </User>
           );
         }}
       </Query>

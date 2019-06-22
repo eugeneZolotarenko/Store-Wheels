@@ -10,7 +10,8 @@ const theme = {
   pink: "#FF268E",
   bigRadius: "30px",
   smallRadius: "10px",
-  maxWidth: "1210px"
+  maxWidth: "1210px",
+  buttonShadow: "0px 0px 7px 0px #FF268E"
 };
 
 const StyledPage = styled.div`
@@ -31,7 +32,7 @@ injectGlobal`
     font-size: 10px;
   };
   *, *:before, *:after{
-    box-sizing: inherit;
+    box-sizing: border-box;
   };
   body {
     padding: 0;

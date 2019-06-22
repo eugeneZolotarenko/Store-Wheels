@@ -1,10 +1,7 @@
-import Link from "next/link";
-import { Mutation } from "react-apollo";
-import { TOGGLE_CART_MATATION } from "./Cart";
 import NavStyles from "./styles/NavStyles";
 import User from "./User";
 import Signout from "./Signout";
-import CartCount from "./CartCount";
+import Link from "./ActiveLink";
 
 class Nav extends React.Component {
   constructor(props) {
@@ -25,38 +22,31 @@ class Nav extends React.Component {
         {({ data: { me } }) => (
           <NavStyles>
             <div className={this.state.condition ? "menu" : "menu hide-menu"}>
-              <Link href="/items">
+              <Link activeClassName="active" href="/items">
                 <a onClick={this.handleClick}>Shop</a>
               </Link>
+
               {me && (
                 <>
-                  <Link href="/sell">
-                    <a onClick={this.handleClick}>Sell</a>
-                  </Link>
-                  <Link href="/orders">
+                  <Link activeClassName="active" href="/orders">
                     <a onClick={this.handleClick}>Orders</a>
                   </Link>
-                  <Link href="/me">
+                  <Link activeClassName="active" href="/me">
                     <a onClick={this.handleClick}>Account</a>
                   </Link>
                   <Signout />
-                  {/* <Mutation mutation={TOGGLE_CART_MATATION}>
-                    {toggleCart => (
-                      <button onClick={toggleCart}>
-                        My Cart
-                        <CartCount
-                          count={me.cart.reduce(
-                            (tally, cartItem) => tally + cartItem.quantity,
-                            0
-                          )}
-                        />
-                      </button>
-                    )}
-                  </Mutation> */}
                 </>
               )}
+              {me &&
+                me.permissions.some(permission =>
+                  ["ADMIN", "ITEMUPDATE"].includes(permission)
+                ) && (
+                  <Link activeClassName="active" href="/sell">
+                    <a onClick={this.handleClick}>Sell</a>
+                  </Link>
+                )}
               {!me && (
-                <Link href="/signup">
+                <Link activeClassName="active" href="/signup">
                   <a onClick={this.handleClick}>Sign In</a>
                 </Link>
               )}

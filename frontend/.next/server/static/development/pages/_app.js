@@ -93,6 +93,61 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/ActiveLink.js":
+/*!**********************************!*\
+  !*** ./components/ActiveLink.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "next/link");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\User\\Desktop\\Advanced-React\\store-wheels\\frontend\\components\\ActiveLink.js";
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+
+
+
+
+var ActiveLink = function ActiveLink(_ref) {
+  var router = _ref.router,
+      children = _ref.children,
+      props = _objectWithoutProperties(_ref, ["router", "children"]);
+
+  var child = react__WEBPACK_IMPORTED_MODULE_2__["Children"].only(children);
+  var className = child.props.className || "";
+
+  if (router.pathname === props.href && props.activeClassName) {
+    className = "".concat(className, " ").concat(props.activeClassName).trim();
+  }
+
+  delete props.activeClassName;
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, _extends({}, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(child, {
+    className: className
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_0__["withRouter"])(ActiveLink));
+
+/***/ }),
+
 /***/ "./components/Cart.js":
 /*!****************************!*\
   !*** ./components/Cart.js ***!
@@ -617,17 +672,21 @@ next_router__WEBPACK_IMPORTED_MODULE_6___default.a.onRouteChangeError = function
 var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_5___default.a.header.withConfig({
   displayName: "Header__StyledHeader",
   componentId: "sc-2cpreo-0"
-})([".bar{position:fixed;z-index:1000;width:100%;display:flex;justify-content:space-between;background-color:", ";padding:1rem;.main-logo,.order-button{width:fit-content;}.nav-orders{display:flex;.order-button{background:none;border:none;display:flex;padding:1rem 2rem;text-transform:uppercase;font-weight:600;font-family:Montserrat;font-size:1.1em;cursor:pointer;color:", ";align-items:center;}@media (max-width:700px){flex-direction:row-reverse;}}}"], function (props) {
+})([".bar{position:fixed;z-index:1000;width:100%;display:flex;justify-content:space-between;background-color:", ";padding:1rem;.main-logo,.order-button{width:fit-content;}.nav-orders{display:flex;.order-button{background:none;border:none;display:flex;padding:1rem 2rem;text-transform:uppercase;font-weight:600;font-family:Montserrat;font-size:1.1em;cursor:pointer;color:", ";align-items:center;transition:0.3s;outline:none;&:hover{color:", ";}&:hover .count{background:", ";}@media (max-width:900px){padding:1rem 1.2rem;}}@media (max-width:700px){flex-direction:row-reverse;}}}"], function (props) {
   return props.theme.grey;
 }, function (props) {
   return props.theme.semiblack;
+}, function (props) {
+  return props.theme.pink;
+}, function (props) {
+  return props.theme.olive;
 });
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_User__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 69
     },
     __self: this
   }, function (_ref) {
@@ -635,55 +694,55 @@ var Header = function Header() {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60
+        lineNumber: 71
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
       className: "bar",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 61
+        lineNumber: 72
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
       href: "/",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62
+        lineNumber: 73
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
       className: "main-logo",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63
+        lineNumber: 74
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
       src: "../static/logo.png",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64
+        lineNumber: 75
       },
       __self: this
     }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "nav-orders",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67
+        lineNumber: 78
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 79
       },
       __self: this
     }), me && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_1__["Mutation"], {
       mutation: _Cart__WEBPACK_IMPORTED_MODULE_2__["TOGGLE_CART_MATATION"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 71
+        lineNumber: 82
       },
       __self: this
     }, function (toggleCart) {
@@ -692,14 +751,14 @@ var Header = function Header() {
         onClick: toggleCart,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 84
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fas fa-shopping-basket fa-lg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 85
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CartCount__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -708,14 +767,14 @@ var Header = function Header() {
         }, 0),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 86
         },
         __self: this
       }));
     }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Cart__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88
+        lineNumber: 99
       },
       __self: this
     }));
@@ -831,15 +890,10 @@ var Meta = function Meta() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "next/link");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-apollo */ "react-apollo");
-/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Cart__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Cart */ "./components/Cart.js");
-/* harmony import */ var _styles_NavStyles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/NavStyles */ "./components/styles/NavStyles.js");
-/* harmony import */ var _User__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./User */ "./components/User.js");
-/* harmony import */ var _Signout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Signout */ "./components/Signout.js");
-/* harmony import */ var _CartCount__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./CartCount */ "./components/CartCount.js");
+/* harmony import */ var _styles_NavStyles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/NavStyles */ "./components/styles/NavStyles.js");
+/* harmony import */ var _User__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./User */ "./components/User.js");
+/* harmony import */ var _Signout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Signout */ "./components/Signout.js");
+/* harmony import */ var _ActiveLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ActiveLink */ "./components/ActiveLink.js");
 var _jsxFileName = "C:\\Users\\User\\Desktop\\Advanced-React\\store-wheels\\frontend\\components\\Nav.js";
 
 
@@ -860,9 +914,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-
-
 
 
 
@@ -899,101 +950,108 @@ function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_User__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_User__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 21
         },
         __self: this
       }, function (_ref) {
         var me = _ref.data.me;
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_NavStyles__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_NavStyles__WEBPACK_IMPORTED_MODULE_1__["default"], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 26
+            lineNumber: 23
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: _this2.state.condition ? "menu" : "menu hide-menu",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 27
+            lineNumber: 24
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          activeClassName: "active",
           href: "/items",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 28
+            lineNumber: 25
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
           onClick: _this2.handleClick,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 29
+            lineNumber: 26
           },
           __self: this
-        }, "Shop")), me && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-          href: "/sell",
+        }, "Shop")), me && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          activeClassName: "active",
+          href: "/orders",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 33
+            lineNumber: 31
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
           onClick: _this2.handleClick,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 32
+          },
+          __self: this
+        }, "Orders")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          activeClassName: "active",
+          href: "/me",
           __source: {
             fileName: _jsxFileName,
             lineNumber: 34
           },
           __self: this
-        }, "Sell")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-          href: "/orders",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 36
-          },
-          __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
           onClick: _this2.handleClick,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 35
+          },
+          __self: this
+        }, "Account")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Signout__WEBPACK_IMPORTED_MODULE_3__["default"], {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 37
           },
           __self: this
-        }, "Orders")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-          href: "/me",
+        })), me && me.permissions.some(function (permission) {
+          return ["ADMIN", "ITEMUPDATE"].includes(permission);
+        }) && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          activeClassName: "active",
+          href: "/sell",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 39
+            lineNumber: 44
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
           onClick: _this2.handleClick,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 40
+            lineNumber: 45
           },
           __self: this
-        }, "Account")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Signout__WEBPACK_IMPORTED_MODULE_6__["default"], {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 42
-          },
-          __self: this
-        })), !me && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        }, "Sell")), !me && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          activeClassName: "active",
           href: "/signup",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 59
+            lineNumber: 49
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
           onClick: _this2.handleClick,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 60
+            lineNumber: 50
           },
           __self: this
         }, "Sign In"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -1001,28 +1059,28 @@ function (_React$Component) {
           className: _this2.state.condition ? "burger-container change-burger" : "burger-container",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 66
+            lineNumber: 56
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "burger-line-1",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 74
+            lineNumber: 64
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "burger-line-2",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 75
+            lineNumber: 65
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "burger-line-3",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 76
+            lineNumber: 66
           },
           __self: this
         })));
@@ -1073,7 +1131,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  html {\n    font-family: Montserrat;\n    box-sizing: border-box;\n    font-size: 10px;\n  };\n  *, *:before, *:after{\n    box-sizing: inherit;\n  };\n  body {\n    padding: 0;\n    margin: 0;\n    font-size: 1.7rem;\n  };\n  a{\n    text-decoration: none;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  html {\n    font-family: Montserrat;\n    box-sizing: border-box;\n    font-size: 10px;\n  };\n  *, *:before, *:after{\n    box-sizing: border-box;\n  };\n  body {\n    padding: 0;\n    margin: 0;\n    font-size: 1.7rem;\n  };\n  a{\n    text-decoration: none;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1095,7 +1153,8 @@ var theme = {
   pink: "#FF268E",
   bigRadius: "30px",
   smallRadius: "10px",
-  maxWidth: "1210px"
+  maxWidth: "1210px",
+  buttonShadow: "0px 0px 7px 0px #FF268E"
 };
 var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "Page__StyledPage",
@@ -1125,31 +1184,31 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 50
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 52
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 53
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 54
         },
         __self: this
       }, this.props.children)));
@@ -1504,11 +1563,9 @@ function (_React$Component) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.start();
-                console.log("On Token Called");
-                console.log(res.id); // manually call the mutation once we have the stripe token
+                nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.start(); // manually call the mutation once we have the stripe token
 
-                _context.next = 5;
+                _context.next = 3;
                 return createOrder({
                   variables: {
                     token: res.id
@@ -1517,7 +1574,7 @@ function (_React$Component) {
                   alert(err.message);
                 });
 
-              case 5:
+              case 3:
                 order = _context.sent;
                 next_router__WEBPACK_IMPORTED_MODULE_4___default.a.push({
                   pathname: "/order",
@@ -1526,7 +1583,7 @@ function (_React$Component) {
                   }
                 });
 
-              case 7:
+              case 5:
               case "end":
                 return _context.stop();
             }
@@ -1550,11 +1607,13 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_User__WEBPACK_IMPORTED_MODULE_10__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 48
         },
         __self: this
       }, function (_ref2) {
-        var me = _ref2.data.me;
+        var me = _ref2.data.me,
+            loading = _ref2.loading;
+        if (loading) return null;
         return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_3__["Mutation"], {
           mutation: CREATE_ORDER_MUTATION,
           refetchQueries: [{
@@ -1568,7 +1627,7 @@ function (_React$Component) {
         }, function (createOrder) {
           return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_stripe_checkout__WEBPACK_IMPORTED_MODULE_2___default.a, {
             amount: Object(_lib_calcTotalPrice__WEBPACK_IMPORTED_MODULE_8__["default"])(me.cart),
-            name: "Strore Wheels",
+            name: "Store Wheels",
             description: "Order of ".concat(totalItems(me.cart), " items"),
             image: me.cart.length && me.cart[0].item && me.cart[0].item.image,
             stripeKey: "pk_test_v8oDsqzumLdS2xneQsjYQMmq00jWEfFxfL",
@@ -1671,12 +1730,12 @@ __webpack_require__.r(__webpack_exports__);
 var CartStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "CartStyles",
   componentId: "sc-1tvog53-0"
-})(["padding:20px;position:relative;background:white;position:fixed;height:100%;top:0;right:0;width:40%;min-width:500px;bottom:0;transform:translateX(100%);transition:all 0.3s;box-shadow:0 0 10px 3px rgba(0,0,0,0.2);z-index:3000;display:grid;grid-template-rows:auto 1fr auto;", ";header{border-bottom:5px solid ", ";margin-bottom:2rem;padding-bottom:2rem;}footer{border-top:10px double ", ";margin-top:2rem;padding-top:2rem;display:grid;grid-template-columns:auto auto;align-items:center;font-size:3rem;font-weight:900;p{margin:0;}}ul{margin:0;padding:0;list-style:none;overflow:scroll;}"], function (props) {
+})(["position:relative;background:white;position:fixed;height:100%;top:0;right:0;width:40%;min-width:300px;bottom:0;transform:translateX(100%);transition:all 0.3s;box-shadow:0 0 10px 3px rgba(0,0,0,0.2);z-index:3000;display:grid;grid-template-rows:auto 1fr auto;", ";header{margin:0 0 0 7px;border-bottom:5px solid ", ";margin-bottom:2rem;padding-bottom:2rem;}footer{border-top:10px double ", ";margin-top:2rem;padding-top:2rem;display:grid;grid-template-columns:auto auto;align-items:center;font-size:2.3rem;font-weight:900;margin:0 7px 10px 7px;span{justify-self:end;}p{margin:0;}}ul{margin:0 0 0 7px;padding:0;list-style:none;overflow:scroll;::-webkit-scrollbar{border-radius:5px;width:8px;}::-webkit-scrollbar-thumb{border-width:1px 1px 1px 2px;border-color:#777;background-color:#aaa;}::-webkit-scrollbar-thumb:hover{border-width:1px 1px 1px 2px;border-color:#555;background-color:#777;}::-webkit-scrollbar-track{border-width:0;}::-webkit-scrollbar-track:hover{border-left:solid 1px #aaa;background-color:#eee;}}"], function (props) {
   return props.open && "transform: translateX(0);";
 }, function (props) {
-  return props.theme.black;
+  return props.theme.olive;
 }, function (props) {
-  return props.theme.black;
+  return props.theme.olive;
 });
 /* harmony default export */ __webpack_exports__["default"] = (CartStyles);
 
@@ -1697,7 +1756,11 @@ __webpack_require__.r(__webpack_exports__);
 var CloseButton = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.button.withConfig({
   displayName: "CloseButton",
   componentId: "sc-1seb878-0"
-})(["background:black;color:white;font-size:3rem;border:0;position:absolute;z-index:2;right:0;"]);
+})(["background:", ";border-bottom-left-radius:5px;color:white;font-size:3rem;border:0;position:absolute;z-index:2;right:0;cursor:pointer;transition:0.3s;outline:none;&:hover{box-shadow:0px 0px 7px 0px ", ";}"], function (props) {
+  return props.theme.olive;
+}, function (props) {
+  return props.theme.olive;
+});
 /* harmony default export */ __webpack_exports__["default"] = (CloseButton);
 
 /***/ }),
@@ -1717,10 +1780,16 @@ __webpack_require__.r(__webpack_exports__);
 var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.ul.withConfig({
   displayName: "NavStyles",
   componentId: "sc-11c0d2g-0"
-})(["margin:0;padding:0;display:flex;justify-self:end;font-size:1.5rem;z-index:999;@media(max-width:700px){width:fit-content;align-self:center;flex-direction:column;text-align:center;transition:.3s;}a,.signout-btn{padding:1rem 2rem;display:flex;align-items:center;position:relative;text-transform:uppercase;font-weight:600;font-size:1em;background:none;border:0;cursor:pointer;font-family:Montserrat;color:", ";@media (max-width:700px){padding:.8rem 10px;text-align:center;justify-content:center;}}.signout-btn{@media(max-width:700px){width:100%;color:white;}}&:hover,&:focus{outline:none;}}.burger-container{z-index:999;cursor:pointer;border:none;background:none;outline:none;width:fit-content;@media (min-width:700px){display:none;}}.burger-container .burger-line-1,.burger-container .burger-line-2,.burger-container .burger-line-3{border-radius:2px;width:35px;height:5px;background-color:", ";margin:6px 0;-webkit-transition:0.4s;transition:0.4s;}.change-burger .burger-line-1{-webkit-transform:rotate(-45deg) translate(-9px,6px);transform:rotate(-45deg) translate(-9px,6px);}.change-burger .burger-line-2{opacity:0;}.change-burger .burger-line-3{-webkit-transform:rotate(45deg) translate(-8px,-8px);transform:rotate(45deg) translate(-8px,-8px);}@media (max-width:1300px){font-size:1.6rem;}.menu{@media(min-width:700px){display:flex;}@media(max-width:700px){transition:.4s ease-in-out;position:absolute;background-color:", ";width:100%;left:0;transform:translateY(56px);a{color:white;}}@media(min-width:700px){display:flex;}}.hide-menu{@media(max-width:700px){transform:translateY(-150%);transition:.4s ease-in-out;}}}"], function (props) {
-  return props.theme.semiblack;
+})(["margin:0;padding:0;display:flex;justify-self:end;font-size:1.5rem;z-index:999;@media (max-width:700px){width:fit-content;align-self:center;flex-direction:column;text-align:center;transition:0.3s;}.active{color:", ";}a,.signout-btn{padding:1rem 2rem;display:flex;align-items:center;position:relative;text-transform:uppercase;font-weight:600;font-size:1em;background:none;border:0;cursor:pointer;font-family:Montserrat;color:", ";transition:all 0.3s;&:hover{color:", ";}@media (max-width:900px){padding:1rem 1.1rem;}@media (max-width:700px){padding:0.8rem 10px;text-align:center;justify-content:center;}}.signout-btn{@media (max-width:700px){width:100%;color:white;}}&:hover,&:focus{outline:none;}.burger-container{z-index:999;cursor:pointer;border:none;background:none;outline:none;width:fit-content;@media (min-width:701px){display:none;}}.burger-container .burger-line-1,.burger-container .burger-line-2,.burger-container .burger-line-3{border-radius:2px;width:35px;height:5px;background-color:", ";margin:6px 0;-webkit-transition:0.4s;transition:0.4s;}.change-burger .burger-line-1{-webkit-transform:rotate(-45deg) translate(-9px,6px);transform:rotate(-45deg) translate(-9px,6px);}.change-burger .burger-line-2{opacity:0;}.change-burger .burger-line-3{-webkit-transform:rotate(45deg) translate(-8px,-8px);transform:rotate(45deg) translate(-8px,-8px);}@media (max-width:1300px){font-size:1.6rem;}.menu{@media (min-width:701px){display:flex;}@media (max-width:700px){transition:0.4s ease-in-out;position:absolute;background-color:", ";width:100%;left:0;transform:translateY(55px);border-bottom-left-radius:5px;border-bottom-right-radius:5px;z-index:900;a,button{color:", ";font-weight:700;}}}.hide-menu{@media (max-width:700px){transform:translateY(-150%);transition:0.4s ease-in-out;}}"], function (props) {
+  return props.theme.pink;
 }, function (props) {
   return props.theme.semiblack;
+}, function (props) {
+  return props.theme.pink;
+}, function (props) {
+  return props.theme.semiblack;
+}, function (props) {
+  return props.theme.grey;
 }, function (props) {
   return props.theme.semiblack;
 });
@@ -1743,7 +1812,11 @@ __webpack_require__.r(__webpack_exports__);
 var SickButton = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.button.withConfig({
   displayName: "SickButton",
   componentId: "l04z44-0"
-})(["background:red;color:white;font-weight:500;border:0;border-radius:0;text-transform:uppercase;font-size:2rem;padding:0.8rem 1.5rem;transform:skew(-2deg);display:inline-block;transition:all 0.5s;&[disabled]{opacity:0.5;}"]);
+})(["background:", ";color:white;font-weight:500;border:0;border-radius:10px;text-transform:uppercase;font-size:2rem;padding:0.8rem 1.5rem;display:inline-block;transition:0.3s;font-family:Montserrat;cursor:pointer;outline:none;&[disabled]{opacity:0.5;}&:hover{box-shadow:", ";}"], function (props) {
+  return props.theme.pink;
+}, function (props) {
+  return props.theme.buttonShadow;
+});
 /* harmony default export */ __webpack_exports__["default"] = (SickButton);
 
 /***/ }),

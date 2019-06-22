@@ -46,6 +46,17 @@ const StyledHeader = styled.header`
         cursor: pointer;
         color: ${props => props.theme.semiblack};
         align-items: center;
+        transition: 0.3s;
+        outline: none;
+        &:hover {
+          color: ${props => props.theme.pink};
+        }
+        &:hover .count {
+          background: ${props => props.theme.olive};
+        }
+        @media (max-width: 900px) {
+          padding: 1rem 1.2rem;
+        }
       }
       @media (max-width: 700px) {
         flex-direction: row-reverse;

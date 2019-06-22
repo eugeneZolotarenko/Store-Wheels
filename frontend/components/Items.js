@@ -6,6 +6,8 @@ import Item from "./Item";
 import Pagination from "./Pagination";
 import { perPage } from "../config";
 import Search from "./Search";
+import { css } from "@emotion/core";
+import { HashLoader } from "react-spinners";
 
 const ALL_ITEMS_QUERY = gql`
   query ALL_ITEMS_QUERY($skip: Int = 0, $first: Int = ${perPage}) {
@@ -20,6 +22,12 @@ const ALL_ITEMS_QUERY = gql`
     }
   }
 `;
+
+const override = css`
+  display: block;
+  margin: 20vh auto;
+`;
+
 const ItemsBlock = styled.div`
   width: 100%;
 `;
@@ -53,8 +61,16 @@ class Items extends Component {
             }}
           >
             {({ data, error, loading }) => {
-              console.log(data);
-              if (loading) return <p>Loading...</p>;
+              // if (loading) return <p>Loading...</p>;
+              if (loading)
+                return (
+                  <HashLoader
+                    css={override}
+                    sizeUnit={"px"}
+                    size={100}
+                    color={"#FF268E"}
+                  />
+                );
               if (error) return <p> Error: {error.message}</p>;
               return (
                 <ItemsList>

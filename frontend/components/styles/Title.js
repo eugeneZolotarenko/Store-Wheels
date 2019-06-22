@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Title = styled.h3`
   margin: 0 1rem;
@@ -14,6 +14,10 @@ const Title = styled.h3`
     font-size: 3.3rem;
     text-align: center;
     padding: 0 1rem;
+    transition: color 0.3s;
+    &:hover {
+      color: ${props => props.theme.pink};
+    }
   }
 `;
 
