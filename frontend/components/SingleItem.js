@@ -39,7 +39,11 @@ const SingleItemStyles = styled.div`
       text-align: center;
     }
     .buttonList {
+      justify-content: center;
+      flex-wrap: wrap;
+      display: flex;
       margin: 1em 0;
+      width: 100%;
       a,
       button {
         background-color: ${props => props.theme.olive};
@@ -50,13 +54,19 @@ const SingleItemStyles = styled.div`
         font-size: 18px;
         padding: 5px 10px;
         margin: 5px;
-        transition: border, background 0.3s;
+        transition: 0.3s;
         cursor: pointer;
         &:hover {
-          color: white;
           background: ${props => props.theme.pink};
           box-shadow: ${props => props.theme.buttonShadow};
         }
+        @media (max-width: 400px) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+      .loading-add-btn {
+        min-width: 125.5px;
       }
     }
   }

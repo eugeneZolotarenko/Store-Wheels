@@ -14,9 +14,17 @@ const ADD_TO_CART_MUTATION = gql`
   }
 `;
 
-const addCartSpinner = css`
-  background-color: #ff268e;
-`;
+// const addCartSpinner = css`
+//   min-width: 126px;
+//   min-height: 32px;
+//   margin: 5px;
+//   background-color: #8ba390;
+//   border: none;
+//   font-family: Montserrat;
+//   border-radius: 10px;
+//   font-size: 18px;
+//   padding: 5px 10px;
+// `;
 
 class AddToCart extends React.Component {
   render() {
@@ -32,16 +40,17 @@ class AddToCart extends React.Component {
         {(addToCart, { loading }) => {
           if (loading)
             return (
-              <BeatLoader
-                css={addCartSpinner}
-                sizeUnit={"px"}
-                size={11}
-                color={"#FFF"}
-              />
+              <button
+                className="loading-add-btn"
+                disabled={loading}
+                onClick={addToCart}
+              >
+                <BeatLoader sizeUnit={"px"} size={11} color={"#FFF"} />
+              </button>
             );
           return (
             <button disabled={loading} onClick={addToCart}>
-              Add{loading && "ing"} To Cart
+              Add To Cart
             </button>
           );
         }}

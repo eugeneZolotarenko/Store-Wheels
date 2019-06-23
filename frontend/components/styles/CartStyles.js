@@ -46,24 +46,22 @@ const CartStyles = styled.div`
     list-style: none;
     overflow: scroll;
     ::-webkit-scrollbar {
-      border-radius: 5px;
-      width: 8px;
+      width: 7px;
     }
     ::-webkit-scrollbar-thumb {
       border-width: 1px 1px 1px 2px;
       border-color: #777;
-      background-color: #aaa;
+      background-color: ${props => props.theme.olive};
+      border-radius: 5px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      border-width: 1px 1px 1px 2px;
-      border-color: #555;
-      background-color: #777;
+      background-color: #aaa;
     }
     ::-webkit-scrollbar-track {
       border-width: 0;
     }
     ::-webkit-scrollbar-track:hover {
-      border-left: solid 1px #aaa;
+      border-radius: 5px;
       background-color: #eee;
     }
   }

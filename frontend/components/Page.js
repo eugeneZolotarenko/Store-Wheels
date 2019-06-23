@@ -30,6 +30,27 @@ injectGlobal`
     font-family: Montserrat;
     box-sizing: border-box;
     font-size: 10px;
+    min-width: 320px;
+    /* ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-width: 1px 1px 1px 2px;
+      border-color: #777;
+      background-color: #C1C4C3;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #aaa;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+      border-width: 0;
+    }
+    ::-webkit-scrollbar-track:hover {
+      border-radius: 5px;
+      background-color: #eee;
+    } */
   };
   *, *:before, *:after{
     box-sizing: border-box;

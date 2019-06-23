@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -151,8 +151,17 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var ADD_TO_CART_MUTATION = graphql_tag__WEBPACK_IMPORTED_MODULE_2___default()(_templateObject());
-var addCartSpinner = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["css"])(["background-color:#ff268e;"]);
+var ADD_TO_CART_MUTATION = graphql_tag__WEBPACK_IMPORTED_MODULE_2___default()(_templateObject()); // const addCartSpinner = css`
+//   min-width: 126px;
+//   min-height: 32px;
+//   margin: 5px;
+//   background-color: #8ba390;
+//   border: none;
+//   font-family: Montserrat;
+//   border-radius: 10px;
+//   font-size: 18px;
+//   padding: 5px 10px;
+// `;
 
 var AddToCart =
 /*#__PURE__*/
@@ -179,23 +188,13 @@ function (_React$Component) {
         }],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 33
         },
         __self: this
       }, function (addToCart, _ref) {
         var loading = _ref.loading;
-        if (loading) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_spinners__WEBPACK_IMPORTED_MODULE_5__["BeatLoader"], {
-          css: addCartSpinner,
-          sizeUnit: "px",
-          size: 11,
-          color: "#FFF",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 35
-          },
-          __self: this
-        });
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        if (loading) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          className: "loading-add-btn",
           disabled: loading,
           onClick: addToCart,
           __source: {
@@ -203,7 +202,25 @@ function (_React$Component) {
             lineNumber: 43
           },
           __self: this
-        }, "Add", loading && "ing", " To Cart");
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_spinners__WEBPACK_IMPORTED_MODULE_5__["BeatLoader"], {
+          sizeUnit: "px",
+          size: 11,
+          color: "#FFF",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 48
+          },
+          __self: this
+        }));
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          disabled: loading,
+          onClick: addToCart,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 52
+          },
+          __self: this
+        }, "Add To Cart");
       });
     }
   }]);
@@ -496,6 +513,92 @@ function (_Component) {
 
 /***/ }),
 
+/***/ "./components/ErrorMessage.js":
+/*!************************************!*\
+  !*** ./components/ErrorMessage.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\User\\Desktop\\Advanced-React\\store-wheels\\frontend\\components\\ErrorMessage.js";
+
+
+
+var ErrorStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "ErrorMessage__ErrorStyles",
+  componentId: "sc-11u5fgj-0"
+})(["padding:2rem;background:white;margin:2rem 0;border:1px solid rgba(0,0,0,0.05);border-left:5px solid red;p{margin:0;font-weight:100;}strong{margin-right:1rem;}"]);
+
+var DisplayError = function DisplayError(_ref) {
+  var error = _ref.error;
+  if (!error || !error.message) return null;
+
+  if (error.networkError && error.networkError.result && error.networkError.result.errors.length) {
+    return error.networkError.result.errors.map(function (error, i) {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ErrorStyles, {
+        key: i,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+        "data-test": "graphql-error",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, "Shoot!"), error.message.replace('GraphQL error: ', '')));
+    });
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ErrorStyles, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    "data-test": "graphql-error",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, "Shoot!"), error.message.replace('GraphQL error: ', '')));
+};
+
+DisplayError.defaultProps = {
+  error: {}
+};
+DisplayError.propTypes = {
+  error: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object
+};
+/* harmony default export */ __webpack_exports__["default"] = (DisplayError);
+
+/***/ }),
+
 /***/ "./components/Item.js":
 /*!****************************!*\
   !*** ./components/Item.js ***!
@@ -745,13 +848,13 @@ var ItemsBlock = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.wi
 var Center = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "Items__Center",
   componentId: "tikday-1"
-})(["max-width:", ";margin:0 auto;padding:2rem;text-align:center;"], function (props) {
+})(["max-width:", ";margin:0 auto;padding:2rem;text-align:center;@media (max-width:350px){padding:2rem 0.5rem;}"], function (props) {
   return props.theme.maxWidth;
 });
 var ItemsList = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "Items__ItemsList",
   componentId: "tikday-2"
-})(["display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));grid-gap:40px;max-width:", ";margin:0 auto;"], function (props) {
+})(["display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));grid-gap:40px;max-width:", ";margin:25px auto;"], function (props) {
   return props.theme.maxWidth;
 });
 
@@ -772,19 +875,19 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ItemsBlock, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 55
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Center, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 56
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Search__WEBPACK_IMPORTED_MODULE_7__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 57
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_1__["Query"], {
@@ -796,7 +899,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 58
         },
         __self: this
       }, function (_ref) {
@@ -811,21 +914,21 @@ function (_Component) {
           color: "#FF268E",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 67
+            lineNumber: 70
           },
           __self: this
         });
         if (error) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 74
+            lineNumber: 77
           },
           __self: this
         }, " Error: ", error.message);
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ItemsList, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 76
+            lineNumber: 79
           },
           __self: this
         }, data.items.map(function (item) {
@@ -834,7 +937,7 @@ function (_Component) {
             key: item.id,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 78
+              lineNumber: 81
             },
             __self: this
           });
@@ -843,7 +946,7 @@ function (_Component) {
         page: this.props.page,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 87
         },
         __self: this
       })));
@@ -862,11 +965,12 @@ function (_Component) {
 /*!**********************************!*\
   !*** ./components/Pagination.js ***!
   \**********************************/
-/*! exports provided: default */
+/*! exports provided: default, PAGINATION_QUERY */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PAGINATION_QUERY", function() { return PAGINATION_QUERY; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! graphql-tag */ "graphql-tag");
@@ -879,6 +983,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _styles_PaginationStyles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/PaginationStyles */ "./components/styles/PaginationStyles.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../config */ "./config.js");
+/* harmony import */ var _ErrorMessage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ErrorMessage */ "./components/ErrorMessage.js");
 var _jsxFileName = "C:\\Users\\User\\Desktop\\Advanced-React\\store-wheels\\frontend\\components\\Pagination.js";
 
 function _templateObject() {
@@ -900,6 +1005,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var PAGINATION_QUERY = graphql_tag__WEBPACK_IMPORTED_MODULE_1___default()(_templateObject());
 
 var Pagination = function Pagination(props) {
@@ -907,7 +1013,7 @@ var Pagination = function Pagination(props) {
     query: PAGINATION_QUERY,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }, function (_ref) {
@@ -917,29 +1023,37 @@ var Pagination = function Pagination(props) {
     if (loading) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 23
       },
       __self: this
     }, "Loading...");
+    if (error) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ErrorMessage__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      error: error,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    });
     var count = data.itemsConnection.aggregate.count;
     var pages = Math.ceil(count / _config__WEBPACK_IMPORTED_MODULE_6__["perPage"]);
     var page = props.page;
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_PaginationStyles__WEBPACK_IMPORTED_MODULE_5__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 29
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 30
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 31
       },
       __self: this
     }, "Stock Wheels | ", page, " of ", pages)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -952,7 +1066,7 @@ var Pagination = function Pagination(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 35
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -960,19 +1074,19 @@ var Pagination = function Pagination(props) {
       "aria-disabled": page <= 1,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40
+        lineNumber: 42
       },
       __self: this
-    }, "Prev")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    }, "\u2190 Prev")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 46
       },
       __self: this
     }, "Page ", props.page, " of ", pages), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47
+        lineNumber: 49
       },
       __self: this
     }, count, " Items Total"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -985,22 +1099,23 @@ var Pagination = function Pagination(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48
+        lineNumber: 50
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      className: "prev",
+      className: "next",
       "aria-disabled": page >= pages,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 57
       },
       __self: this
-    }, "Next")));
+    }, "Next \u2192")));
   });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Pagination);
+
 
 /***/ }),
 
@@ -1202,7 +1317,7 @@ function (_React$Component) {
         }, function (client) {
           return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", _extends({}, getInputProps({
             type: "search",
-            placeholder: "Search for an Item",
+            placeholder: "Search for the Wheels",
             id: "search",
             className: _this2.state.loading ? "loading" : "",
             onChange: function onChange(e) {
@@ -1342,26 +1457,32 @@ __webpack_require__.r(__webpack_exports__);
 var DropDown = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "DropDown",
   componentId: "n5d97g-0"
-})(["position:absolute;width:100%;z-index:2;border:1px solid ", ";"], function (props) {
-  return props.theme.lightgrey;
+})(["position:absolute;width:100%;z-index:2;border:2px solid ", ";border-radius:10px;"], function (props) {
+  return props.theme.olive;
 });
 var DropDownItem = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "DropDown__DropDownItem",
   componentId: "n5d97g-1"
-})(["border-bottom:1px solid ", ";background:", ";padding:1rem;transition:all 0.2s;", ";display:flex;align-items:center;border-left:10px solid ", ";img{margin-right:10px;}"], function (props) {
-  return props.theme.lightgrey;
+})(["border-bottom:2px solid ", ";background:", ";padding:1rem;transition:all 0.2s;", ";display:flex;align-items:center;border-left:10px solid ", ";img{margin-right:10px;}&:last-child{border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-bottom:none;}&:nth-child(1){border-top-left-radius:10px;border-top-right-radius:10px;}"], function (props) {
+  return props.theme.olive;
 }, function (props) {
   return props.highlighted ? "#f7f7f7" : "white";
 }, function (props) {
   return props.highlighted ? "padding-left: 2rem;" : null;
 }, function (props) {
-  return props.highlighted ? props.theme.lightgrey : "white";
+  return props.highlighted ? props.theme.pink : "white";
 });
-var glow = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["keyframes"])(["from{box-shadow:0 0 0px yellow;}to{box-shadow:0 0 10px 1px yellow;}"]);
+var glow = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["keyframes"])(["from{box-shadow:0 0 0px ", ";}to{box-shadow:0 0 10px 1px ", ";}"], function (props) {
+  return props.theme.pink;
+}, function (props) {
+  return props.theme.pink;
+});
 var SearchStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "DropDown__SearchStyles",
   componentId: "n5d97g-2"
-})(["position:relative;input{font-family:Montserrat;width:100%;padding:10px;border:0;font-size:2rem;&.loading{animation:", " 0.5s ease-in-out infinite alternate;}}"], glow);
+})(["position:relative;input{font-family:Montserrat;width:100%;padding:10px;border:2px solid ", ";border-radius:10px;font-size:2rem;outline:none;margin-bottom:5px;&.loading{animation:", " 0.5s ease-in-out infinite alternate;}}"], function (props) {
+  return props.theme.olive;
+}, glow);
 
 
 /***/ }),
@@ -1381,7 +1502,7 @@ __webpack_require__.r(__webpack_exports__);
 var Item = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "ItemStyles__Item",
   componentId: "sc-16pk14u-0"
-})(["background:white;border-radius:10px;position:relative;display:flex;flex-direction:column;box-shadow:0px 4px 18px 0px ", ";img{cursor:pointer;width:100%;height:300px;object-fit:contain;border-radius:10px;}p{font-size:12px;line-height:1.7;font-weight:300;flex-grow:1;padding:0 3rem;font-size:1.5rem;}.buttonList{display:grid;width:100%;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));grid-gap:1px;background:white;border-bottom-left-radius:10px;border-bottom-right-radius:10px;a{display:flex;align-items:center;justify-content:center;}& > *{background:", ";color:white;border:0;font-size:1.5rem;font-weight:600;padding:1rem 0.45rem;font-family:Montserrat;cursor:pointer;transition:background-color 0.3s;outline:none;&:hover{background-color:", ";}}*:nth-child(1){border-bottom-left-radius:10px;}*:last-child{border-bottom-right-radius:10px;}}"], function (props) {
+})(["background:white;border-radius:10px;position:relative;display:flex;flex-direction:column;box-shadow:0px 4px 18px 0px ", ";img{cursor:pointer;width:100%;height:300px;object-fit:contain;border-radius:10px;}p{font-size:12px;line-height:1.7;font-weight:300;flex-grow:1;padding:0 3rem;font-size:1.5rem;}.buttonList{display:grid;width:100%;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));grid-gap:1px;background:white;border-bottom-left-radius:10px;border-bottom-right-radius:10px;a{display:flex;align-items:center;justify-content:center;}& > *{background:", ";color:white;border:0;font-size:1.45rem;font-weight:600;padding:1rem 0.45rem;font-family:Montserrat;cursor:pointer;transition:background-color 0.3s;outline:none;&:hover{background-color:", ";}}*:nth-child(1){border-bottom-left-radius:10px;}*:last-child{border-bottom-right-radius:10px;}}"], function (props) {
   return props.theme.olive;
 }, function (props) {
   return props.theme.olive;
@@ -1407,10 +1528,12 @@ __webpack_require__.r(__webpack_exports__);
 var PaginationStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "PaginationStyles",
   componentId: "aduuar-0"
-})(["text-align:center;display:inline-grid;grid-template-columns:repeat(4,auto);align-items:stretch;justify-content:center;align-content:center;margin:2rem 0;border:1px solid ", ";border-radius:10px;& > *{margin:0;padding:15px 30px;border-right:1px solid ", ";&:last-child{border-right:0;}}a[aria-disabled='true']{color:grey;pointer-events:none;}"], function (props) {
-  return props.theme.lightgrey;
+})(["text-align:center;display:inline-grid;grid-template-columns:repeat(4,auto);align-items:stretch;justify-content:center;margin:2rem 0;border:2px solid ", ";border-radius:10px;& > *{display:flex;justify-content:center;align-items:center;margin:0;padding:15px 30px;border-right:1px solid ", ";@media (max-width:500px){padding:10px 15px;}&:last-child{border-right:0;}}a[aria-disabled=\"true\"]{color:", ";pointer-events:none;}"], function (props) {
+  return props.theme.olive;
 }, function (props) {
-  return props.theme.lightgrey;
+  return props.theme.olive;
+}, function (props) {
+  return props.theme.olive;
 });
 /* harmony default export */ __webpack_exports__["default"] = (PaginationStyles);
 
@@ -1479,7 +1602,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "perPage", function() { return perPage; });
 // This is client side config only - don't put anything in here that shouldn't be public!
 var endpoint = "http://localhost:4444";
-var perPage = 9;
+var perPage = 6;
 
 /***/ }),
 
@@ -1543,7 +1666,7 @@ var ItemsPage = function ItemsPage(props) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/items.js ***!
   \******************************/

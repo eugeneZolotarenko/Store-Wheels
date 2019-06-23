@@ -72,7 +72,6 @@ class CreateItem extends Component {
               // call the mutation
               const res = await createItem();
               //  change them to the single item page
-              console.log(res);
               Router.push({
                 pathname: "/item",
                 query: { id: res.data.createItem.id }
@@ -81,16 +80,16 @@ class CreateItem extends Component {
           >
             <Error error={error} />
             <fieldset disabled={loading} aria-busy={loading}>
-              <label htmlFor="file">
-                Image
+              <label className="uploud-btn" htmlFor="file">
+                Upload Your Image...
                 <input
                   type="file"
                   id="file"
                   name="title"
                   placeholder="Upoload an image"
                   required
-                  //   value={this.state.image}
                   onChange={this.uploadFile}
+                  className="hide-input"
                 />
                 {this.state.image && (
                   <img

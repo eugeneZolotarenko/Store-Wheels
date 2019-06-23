@@ -39,7 +39,7 @@ const Item = styled.div`
       background: ${props => props.theme.olive};
       color: white;
       border: 0;
-      font-size: 1.5rem;
+      font-size: 1.45rem;
       font-weight: 600;
       padding: 1rem 0.45rem;
       font-family: Montserrat;

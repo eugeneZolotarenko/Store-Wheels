@@ -37,13 +37,16 @@ const Center = styled.div`
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  @media (max-width: 350px) {
+    padding: 2rem 0.5rem;
+  }
 `;
 const ItemsList = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 40px;
   max-width: ${props => props.theme.maxWidth};
-  margin: 0 auto;
+  margin: 25px auto;
 `;
 
 class Items extends Component {
