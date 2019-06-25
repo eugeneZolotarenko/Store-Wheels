@@ -110,7 +110,7 @@ function (_React$Component) {
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_spinners__WEBPACK_IMPORTED_MODULE_5__["BeatLoader"], {
           sizeUnit: "px",
-          size: 11,
+          size: 10,
           color: "#FFF",
           __source: {
             fileName: _jsxFileName,
@@ -38428,7 +38428,7 @@ var ItemsPage = function ItemsPage(props) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/items.js ***!
   \******************************/
@@ -38453,5 +38453,5 @@ module.exports = dll_5d62d38be3592dca3a42;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[5,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=items.js.map

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -204,7 +204,7 @@ function (_React$Component) {
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_spinners__WEBPACK_IMPORTED_MODULE_5__["BeatLoader"], {
           sizeUnit: "px",
-          size: 11,
+          size: 10,
           color: "#FFF",
           __source: {
             fileName: _jsxFileName,
@@ -1666,7 +1666,7 @@ var ItemsPage = function ItemsPage(props) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/items.js ***!
   \******************************/

@@ -45,7 +45,7 @@ class AddToCart extends React.Component {
                 disabled={loading}
                 onClick={addToCart}
               >
-                <BeatLoader sizeUnit={"px"} size={11} color={"#FFF"} />
+                <BeatLoader sizeUnit={"px"} size={10} color={"#FFF"} />
               </button>
             );
           return (
