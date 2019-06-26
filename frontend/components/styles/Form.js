@@ -18,7 +18,7 @@ const Form = styled.form`
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
   background: rgba(0, 0, 0, 0.02);
   border: 5px solid white;
-  padding: 60px;
+  padding: 40px;
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 600;
@@ -63,7 +63,7 @@ const Form = styled.form`
     justify-content: center;
     cursor: pointer;
     padding: 1rem;
-    margin: 3rem auto 2rem auto;
+    margin: 3rem auto 0 auto;
     border-radius: 10px;
     transition: 0.3s;
     font-family: Montserrat;

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -112,6 +112,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _User__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./User */ "./components/User.js");
 /* harmony import */ var _OrderList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./OrderList */ "./components/OrderList.js");
 /* harmony import */ var _styles_AccountStyles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/AccountStyles */ "./components/styles/AccountStyles.js");
+/* harmony import */ var _styles_SickButton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles/SickButton */ "./components/styles/SickButton.js");
 var _jsxFileName = "C:\\Users\\User\\Desktop\\Advanced-React\\store-wheels\\frontend\\components\\Account.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -139,6 +140,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var Account =
 /*#__PURE__*/
 function (_Component) {
@@ -156,107 +158,181 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_User__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 12
         },
         __self: this
       }, function (_ref) {
-        var me = _ref.data.me;
+        var me = _ref.data.me,
+            loading = _ref.loading,
+            error = _ref.error;
+        if (!me) return null;
+        if (loading) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 15
+          },
+          __self: this
+        }, "Loading...");
+        if (error) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Error, {
+          error: error,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 16
+          },
+          __self: this
+        });
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_1__["Query"], {
           query: _OrderList__WEBPACK_IMPORTED_MODULE_4__["USER_ORDERS_QUERY"],
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 13
+            lineNumber: 18
           },
           __self: this
         }, function (_ref2) {
-          var orders = _ref2.data.orders;
+          var orders = _ref2.data.orders,
+              loading = _ref2.loading,
+              error = _ref2.error;
+          if (loading) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 20
+            },
+            __self: this
+          }, "Loading...");
+          if (error) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Error, {
+            error: error,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 21
+            },
+            __self: this
+          });
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_AccountStyles__WEBPACK_IMPORTED_MODULE_5__["default"], {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 15
+              lineNumber: 23
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 16
+              lineNumber: 24
             },
             __self: this
-          }, "Hi, ", me.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          }, "Hi, ", me.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "permissions-block",
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 25
+            },
+            __self: this
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             key: me.permissions,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 17
+              lineNumber: 26
             },
             __self: this
           }, "Your Permission", me.permissions.length === 1 ? "" : "s", ":", " ", me.permissions.map(function (permission) {
             return "|  ".concat(permission, "  |");
           })), me.permissions.some(function (permission) {
             return ["ADMIN", "PERMISSIONUPDATE"].includes(permission);
-          }) && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+          }) && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SickButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 35
+            },
+            __self: this
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
             href: {
               pathname: "/permissions"
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 24
+              lineNumber: 36
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 29
+              lineNumber: 41
             },
             __self: this
-          }, "Manage Permissions of Users")), orders.length > 0 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          }, "Manage Permissions of Users")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "orders-block",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 34
+              lineNumber: 46
             },
             __self: this
-          }, "You have already ", orders.length, " order", orders.length === 1 ? "" : "s", "!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-            href: {
-              pathname: "/orders"
-            },
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 38
-            },
-            __self: this
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 43
-            },
-            __self: this
-          }, "Check your previous Orders"))), orders.length === 0 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          }, orders.length > 0 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
             __source: {
               fileName: _jsxFileName,
               lineNumber: 49
             },
             __self: this
-          }, "You don't have orders yet..."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+          }, "You have already ", orders.length, " order", orders.length === 1 ? "" : "s", "!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SickButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 53
+            },
+            __self: this
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
             href: {
-              pathname: "/shop"
+              pathname: "/orders"
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 50
+              lineNumber: 54
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 55
-            },
-            __self: this
-          }, "Let's Buy cool wheels for yor Car!"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-            __source: {
-              fileName: _jsxFileName,
               lineNumber: 59
             },
             __self: this
-          }, "Your current Email: ", me.email), console.log(me), console.log(orders.length));
+          }, "Check your previous Orders")))), orders.length === 0 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 66
+            },
+            __self: this
+          }, "You don't have orders yet..."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SickButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 67
+            },
+            __self: this
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+            href: {
+              pathname: "/shop"
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 68
+            },
+            __self: this
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 73
+            },
+            __self: this
+          }, "Let's Buy cool wheels for yor Car!"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "mail-block",
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 79
+            },
+            __self: this
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 80
+            },
+            __self: this
+          }, "Your current Email: ", me.email)));
         });
       });
     }
@@ -1169,7 +1245,13 @@ __webpack_require__.r(__webpack_exports__);
 var AccountStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "AccountStyles",
   componentId: "j0sk5m-0"
-})(["display:block;"]);
+})(["max-width:calc(", " + 30px);margin:0 auto;padding:0 15px;h3{text-align:center;color:", ";font-size:190%;}.permissions-block,.orders-block,.mail-block{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;margin-bottom:30px;padding:2.5rem;background:white;border-radius:10px;box-shadow:0px 4px 18px 0px ", ";a{display:block;justify-self:center;color:white;padding:0.5rem;}}p{font-size:1.8rem;margin:0;padding:2.5rem 1.5rem;}"], function (props) {
+  return props.theme.maxWidth;
+}, function (props) {
+  return props.theme.semiblack;
+}, function (props) {
+  return props.theme.olive;
+});
 /* harmony default export */ __webpack_exports__["default"] = (AccountStyles);
 
 /***/ }),
@@ -1190,7 +1272,7 @@ var loading = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["keyframes"]
 var Form = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.form.withConfig({
   displayName: "Form",
   componentId: "sc-1xszr8q-0"
-})(["margin:0 auto;max-width:", ";box-shadow:0 0 5px 3px rgba(0,0,0,0.05);background:rgba(0,0,0,0.02);border:5px solid white;padding:60px;font-size:1.5rem;line-height:1.5;font-weight:600;border-radius:10px;label{display:block;margin-bottom:1rem;}input,textarea,select{width:100%;padding:1rem;font-size:1.4rem;border:1.5px solid ", ";font-family:Montserrat;border-radius:5px;&:focus{outline:0;border-color:", ";}}.hide-input{width:0.1px;height:0.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1;}.uploud-btn,button,input[type=\"submit\"]{min-height:38px;border:none;width:fit-content;font-size:19px;font-weight:700;color:white;background-color:", ";display:flex;justify-content:center;cursor:pointer;padding:1rem;margin:3rem auto 2rem auto;border-radius:10px;transition:0.3s;font-family:Montserrat;&:hover{background-color:", ";box-shadow:", ";}}fieldset{border-radius:10px;border:0;padding:0;&[disabled]{opacity:0.9;}&::before{height:15px;content:\"\";display:block;border-radius:10px;background-image:linear-gradient( to right,#ff268e 0%,#8ba390 50%,#ff268e 100% );}&[aria-busy=\"true\"]::before{background-size:50% auto;animation:", " 1s linear infinite;}}"], function (props) {
+})(["margin:0 auto;max-width:", ";box-shadow:0 0 5px 3px rgba(0,0,0,0.05);background:rgba(0,0,0,0.02);border:5px solid white;padding:40px;font-size:1.5rem;line-height:1.5;font-weight:600;border-radius:10px;label{display:block;margin-bottom:1rem;}input,textarea,select{width:100%;padding:1rem;font-size:1.4rem;border:1.5px solid ", ";font-family:Montserrat;border-radius:5px;&:focus{outline:0;border-color:", ";}}.hide-input{width:0.1px;height:0.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1;}.uploud-btn,button,input[type=\"submit\"]{min-height:38px;border:none;width:fit-content;font-size:19px;font-weight:700;color:white;background-color:", ";display:flex;justify-content:center;cursor:pointer;padding:1rem;margin:3rem auto 0 auto;border-radius:10px;transition:0.3s;font-family:Montserrat;&:hover{background-color:", ";box-shadow:", ";}}fieldset{border-radius:10px;border:0;padding:0;&[disabled]{opacity:0.9;}&::before{height:15px;content:\"\";display:block;border-radius:10px;background-image:linear-gradient( to right,#ff268e 0%,#8ba390 50%,#ff268e 100% );}&[aria-busy=\"true\"]::before{background-size:50% auto;animation:", " 1s linear infinite;}}"], function (props) {
   return props.theme.maxWidth;
 }, function (props) {
   return props.theme.olive;
@@ -1228,6 +1310,30 @@ var OrderItemStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.l
   return props.theme.offWhite;
 });
 /* harmony default export */ __webpack_exports__["default"] = (OrderItemStyles);
+
+/***/ }),
+
+/***/ "./components/styles/SickButton.js":
+/*!*****************************************!*\
+  !*** ./components/styles/SickButton.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+
+var SickButton = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.button.withConfig({
+  displayName: "SickButton",
+  componentId: "l04z44-0"
+})(["background:", ";color:white;font-weight:500;border:0;border-radius:10px;text-transform:uppercase;font-size:2rem;padding:0.8rem 1.5rem;display:inline-block;transition:0.3s;font-family:Montserrat;cursor:pointer;outline:none;&[disabled]{opacity:0.5;}&:hover{box-shadow:", ";}"], function (props) {
+  return props.theme.pink;
+}, function (props) {
+  return props.theme.buttonShadow;
+});
+/* harmony default export */ __webpack_exports__["default"] = (SickButton);
 
 /***/ }),
 
@@ -1306,7 +1412,7 @@ var Me = function Me(props) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!***************************!*\
   !*** multi ./pages/me.js ***!
   \***************************/

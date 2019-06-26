@@ -5,6 +5,12 @@ import Router from "next/router";
 import Form from "./styles/Form";
 import formatMoney from "../lib/formatMoney";
 import Error from "./ErrorMessage";
+import styled from "styled-components";
+
+const SellBlock = styled.div`
+  height: calc(100vh - 70px);
+  padding: 5% 0;
+`;
 
 const CREATE_ITEM_MUTATION = gql`
   mutation CREATE_ITEM_MUTATION(
@@ -63,84 +69,86 @@ class CreateItem extends Component {
   };
   render() {
     return (
-      <Mutation mutation={CREATE_ITEM_MUTATION} variables={this.state}>
-        {(createItem, { loading, error }) => (
-          <Form
-            onSubmit={async e => {
-              // Stop the form from submitting
-              e.preventDefault();
-              // call the mutation
-              const res = await createItem();
-              //  change them to the single item page
-              Router.push({
-                pathname: "/item",
-                query: { id: res.data.createItem.id }
-              });
-            }}
-          >
-            <Error error={error} />
-            <fieldset disabled={loading} aria-busy={loading}>
-              <label className="uploud-btn" htmlFor="file">
-                Upload Your Image...
-                <input
-                  type="file"
-                  id="file"
-                  name="title"
-                  placeholder="Upoload an image"
-                  required
-                  onChange={this.uploadFile}
-                  className="hide-input"
-                />
-                {this.state.image && (
-                  <img
-                    width="200px"
-                    src={this.state.image}
-                    alt="Upload preview"
+      <SellBlock>
+        <Mutation mutation={CREATE_ITEM_MUTATION} variables={this.state}>
+          {(createItem, { loading, error }) => (
+            <Form
+              onSubmit={async e => {
+                // Stop the form from submitting
+                e.preventDefault();
+                // call the mutation
+                const res = await createItem();
+                //  change them to the single item page
+                Router.push({
+                  pathname: "/item",
+                  query: { id: res.data.createItem.id }
+                });
+              }}
+            >
+              <Error error={error} />
+              <fieldset disabled={loading} aria-busy={loading}>
+                <label className="uploud-btn" htmlFor="file">
+                  Upload Your Image...
+                  <input
+                    type="file"
+                    id="file"
+                    name="title"
+                    placeholder="Upoload an image"
+                    required
+                    onChange={this.uploadFile}
+                    className="hide-input"
                   />
-                )}
-              </label>
+                  {this.state.image && (
+                    <img
+                      width="200px"
+                      src={this.state.image}
+                      alt="Upload preview"
+                    />
+                  )}
+                </label>
 
-              <label htmlFor="title">
-                Title
-                <input
-                  type="text"
-                  id="title"
-                  name="title"
-                  placeholder="Title"
-                  required
-                  value={this.state.title}
-                  onChange={this.handleChange}
-                />
-              </label>
+                <label htmlFor="title">
+                  Title
+                  <input
+                    type="text"
+                    id="title"
+                    name="title"
+                    placeholder="Title"
+                    required
+                    value={this.state.title}
+                    onChange={this.handleChange}
+                  />
+                </label>
 
-              <label htmlFor="price">
-                Price
-                <input
-                  type="number"
-                  id="price"
-                  name="price"
-                  placeholder="Price"
-                  required
-                  value={this.state.price}
-                  onChange={this.handleChange}
-                />
-              </label>
-              <label htmlFor="description">
-                Description
-                <textarea
-                  id="description"
-                  name="description"
-                  placeholder="Enter A Description"
-                  required
-                  value={this.state.description}
-                  onChange={this.handleChange}
-                />
-              </label>
-              <button type="submit">Submit</button>
-            </fieldset>
-          </Form>
-        )}
-      </Mutation>
+                <label htmlFor="price">
+                  Price
+                  <input
+                    type="number"
+                    id="price"
+                    name="price"
+                    placeholder="Price"
+                    required
+                    value={this.state.price}
+                    onChange={this.handleChange}
+                  />
+                </label>
+                <label htmlFor="description">
+                  Description
+                  <textarea
+                    id="description"
+                    name="description"
+                    placeholder="Enter A Description"
+                    required
+                    value={this.state.description}
+                    onChange={this.handleChange}
+                  />
+                </label>
+                <button type="submit">Submit</button>
+              </fieldset>
+            </Form>
+          )}
+        </Mutation>
+      </SellBlock>
     );
   }
 }
