@@ -33,7 +33,7 @@ const ItemsBlock = styled.div`
 `;
 
 const Center = styled.div`
-  max-width: ${props => props.theme.maxWidth};
+  max-width: calc(${props => props.theme.maxWidth} + 30px);
   margin: 0 auto;
   padding: 2rem;
   text-align: center;

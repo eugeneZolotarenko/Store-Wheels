@@ -47,6 +47,7 @@ class TakeMyMoney extends React.Component {
     return (
       <User>
         {({ data: { me }, loading }) => {
+          if (!me) return null;
           if (loading) return null;
           return (
             <Mutation

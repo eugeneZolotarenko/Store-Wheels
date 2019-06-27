@@ -848,7 +848,7 @@ var ItemsBlock = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.wi
 var Center = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({
   displayName: "Items__Center",
   componentId: "tikday-1"
-})(["max-width:", ";margin:0 auto;padding:2rem;text-align:center;@media (max-width:350px){padding:2rem 0.5rem;}"], function (props) {
+})(["max-width:calc(", " + 30px);margin:0 auto;padding:2rem;text-align:center;@media (max-width:350px){padding:2rem 0.5rem;}"], function (props) {
   return props.theme.maxWidth;
 });
 var ItemsList = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.div.withConfig({

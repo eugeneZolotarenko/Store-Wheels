@@ -1,17 +1,18 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const OrderStyles = styled.div`
   max-width: 1000px;
-  margin: 0 auto;
-  border: 1px solid ${props => props.theme.offWhite};
-  box-shadow: ${props => props.theme.bs};
+  margin: 5% auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 18px 0px ${props => props.theme.olive};
   padding: 2rem;
-  border-top: 10px solid red;
+  border-top: 10px solid ${props => props.theme.olive};
+  border-bottom: 10px solid ${props => props.theme.olive};
   & > p {
     display: grid;
     grid-template-columns: 1fr 5fr;
     margin: 0;
-    border-bottom: 1px solid ${props => props.theme.offWhite};
+    border-bottom: 1px solid ${props => props.theme.olive};
     span {
       padding: 1rem;
       &:first-child {
@@ -21,7 +22,7 @@ const OrderStyles = styled.div`
     }
   }
   .order-item {
-    border-bottom: 1px solid ${props => props.theme.offWhite};
+    border-bottom: 1px solid ${props => props.theme.olive};
     display: grid;
     grid-template-columns: 300px 1fr;
     align-items: center;
@@ -31,7 +32,7 @@ const OrderStyles = styled.div`
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 `;

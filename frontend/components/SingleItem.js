@@ -15,7 +15,7 @@ const SingleItemStyles = styled.div`
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
-  min-height: calc(100vh - 69px);
+  min-height: calc(100vh - 70px);
   .item-image {
     width: 80%;
     height: 80%;

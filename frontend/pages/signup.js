@@ -9,7 +9,7 @@ const Columns = styled.div`
   grid-gap: 20px;
   max-width: calc(${props => props.theme.maxWidth} + 30px);
   margin: 0 auto;
-  padding: 5%;
+  padding: 5% 15px;
 `;
 
 const SignupPage = props => (

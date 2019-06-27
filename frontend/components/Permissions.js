@@ -36,13 +36,19 @@ const ALL_USERS_QUERY = gql`
   }
 `;
 
+const headerStyle = {
+  textAlign: "center",
+  color: "${props => props.theme.semiblack}",
+  fontSize: "150%"
+};
+
 const Permissions = props => (
   <Query query={ALL_USERS_QUERY}>
     {({ data, loading, error }) => (
       <div>
         <Error error={error} />
         <div>
-          <h2>Manage Permissions</h2>
+          <h3 style={headerStyle}>Manage Permissions of Users</h3>
           <Table>
             <thead>
               <tr>

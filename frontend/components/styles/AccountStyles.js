@@ -22,10 +22,11 @@ const AccountStyles = styled.div`
     border-radius: 10px;
     box-shadow: 0px 4px 18px 0px ${props => props.theme.olive};
     a {
+      font-size: 90%;
       display: block;
       justify-self: center;
       color: white;
-      padding: 0.5rem;
+      padding: 0.2rem;
     }
   }
   p {

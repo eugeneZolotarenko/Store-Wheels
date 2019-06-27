@@ -23,7 +23,7 @@ const Inner = styled.div`
   // max-width: ${props => props.theme.maxWidth};
   // margin: 0 auto;
   // padding: 2rem;
-  padding-top: 69px;
+  padding-top: 70px;
 `;
 injectGlobal`
   html {
@@ -31,14 +31,13 @@ injectGlobal`
     box-sizing: border-box;
     font-size: 10px;
     min-width: 320px;
-    /* ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
       width: 10px;
     }
     ::-webkit-scrollbar-thumb {
       border-width: 1px 1px 1px 2px;
       border-color: #777;
       background-color: #C1C4C3;
-      border-radius: 5px;
     }
     ::-webkit-scrollbar-thumb:hover {
       background-color: #aaa;
@@ -48,9 +47,8 @@ injectGlobal`
       border-width: 0;
     }
     ::-webkit-scrollbar-track:hover {
-      border-radius: 5px;
       background-color: #eee;
-    } */
+    }
   };
   *, *:before, *:after{
     box-sizing: border-box;

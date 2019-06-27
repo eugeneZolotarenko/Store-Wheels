@@ -30,7 +30,18 @@ const OrderUl = styled.ul`
   display: grid;
   grid-gap: 4rem;
   grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  max-width: calc(${props => props.theme.maxWidth} + 30px);
+  padding: 0 15px;
+  margin: 15px auto 60px auto;
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+  }
 `;
+const headerStyle = {
+  textAlign: "center",
+  color: "${props => props.theme.semiblack}",
+  fontSize: "190%"
+};
 
 class OrderList extends React.Component {
   render() {
@@ -39,10 +50,11 @@ class OrderList extends React.Component {
         {({ data: { orders }, loading, error }) => {
           if (loading) return <p>Loading...</p>;
           if (error) return <Error error={error} />;
-          console.log(orders);
           return (
             <div>
-              <h2>You have {orders.length} orders</h2>
+              <h3 style={headerStyle}>
+                You have {orders.length} order{orders.length === 1 ? "" : "s"}
+              </h3>
               <OrderUl>
                 {orders.map(order => (
                   <OrderItemStyles key={order.id}>

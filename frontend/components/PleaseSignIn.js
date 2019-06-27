@@ -2,6 +2,11 @@ import { Query } from "react-apollo";
 import { CURRENT_USER_QUERY } from "./User";
 import Signin from "./Signin";
 
+const signin = {
+  textAlign: "center",
+  fontSize: "120%"
+};
+
 const PleaseSignIn = props => (
   <Query query={CURRENT_USER_QUERY}>
     {({ data, loading }) => {
@@ -9,7 +14,7 @@ const PleaseSignIn = props => (
       if (!data.me) {
         return (
           <div>
-            <p>Please Sign In before Continuing</p>
+            <p style={signin}>Please Sign In before Continuing</p>
             <Signin />
           </div>
         );
