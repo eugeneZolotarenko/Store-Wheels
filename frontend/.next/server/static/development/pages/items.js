@@ -765,11 +765,12 @@ _defineProperty(Item, "propTypes", {
 /*!*****************************!*\
   !*** ./components/Items.js ***!
   \*****************************/
-/*! exports provided: default, ALL_ITEMS_QUERY */
+/*! exports provided: default, ItemsList, ALL_ITEMS_QUERY */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ItemsList", function() { return ItemsList; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ALL_ITEMS_QUERY", function() { return ALL_ITEMS_QUERY; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -894,8 +895,7 @@ function (_Component) {
         query: ALL_ITEMS_QUERY,
         fetchPolicy: "network-only",
         variables: {
-          skip: this.props.page * _config__WEBPACK_IMPORTED_MODULE_6__["perPage"] - _config__WEBPACK_IMPORTED_MODULE_6__["perPage"] // first: PerPage
-
+          skip: this.props.page * _config__WEBPACK_IMPORTED_MODULE_6__["perPage"] - _config__WEBPACK_IMPORTED_MODULE_6__["perPage"]
         },
         __source: {
           fileName: _jsxFileName,
@@ -906,7 +906,6 @@ function (_Component) {
         var data = _ref.data,
             error = _ref.error,
             loading = _ref.loading;
-        // if (loading) return <p>Loading...</p>;
         if (loading) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_spinners__WEBPACK_IMPORTED_MODULE_9__["HashLoader"], {
           css: override,
           sizeUnit: "px",
@@ -914,21 +913,21 @@ function (_Component) {
           color: "#FF268E",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 70
+            lineNumber: 68
           },
           __self: this
         });
         if (error) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 77
+            lineNumber: 75
           },
           __self: this
         }, " Error: ", error.message);
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ItemsList, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 79
+            lineNumber: 77
           },
           __self: this
         }, data.items.map(function (item) {
@@ -937,7 +936,7 @@ function (_Component) {
             key: item.id,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 81
+              lineNumber: 79
             },
             __self: this
           });
@@ -946,7 +945,7 @@ function (_Component) {
         page: this.props.page,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 85
         },
         __self: this
       })));
@@ -957,6 +956,7 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Items);
+
 
 
 /***/ }),
@@ -1502,7 +1502,7 @@ __webpack_require__.r(__webpack_exports__);
 var Item = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "ItemStyles__Item",
   componentId: "sc-16pk14u-0"
-})(["background:white;border-radius:10px;position:relative;display:flex;flex-direction:column;box-shadow:0px 4px 18px 0px ", ";img{cursor:pointer;width:100%;height:300px;object-fit:contain;border-radius:10px;}p{font-size:12px;line-height:1.7;font-weight:300;flex-grow:1;padding:0 3rem;font-size:1.5rem;}.buttonList{display:grid;width:100%;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));grid-gap:1px;background:white;border-bottom-left-radius:10px;border-bottom-right-radius:10px;a{display:flex;align-items:center;justify-content:center;}& > *{background:", ";color:white;border:0;font-size:1.45rem;font-weight:600;padding:1rem 0.45rem;font-family:Montserrat;cursor:pointer;transition:background-color 0.3s;outline:none;&:hover{background-color:", ";}}*:nth-child(1){border-bottom-left-radius:10px;}*:last-child{border-bottom-right-radius:10px;}}"], function (props) {
+})(["background:white;border-radius:10px;position:relative;display:flex;flex-direction:column;box-shadow:0px 4px 18px 0px ", ";max-height:620px;img{cursor:pointer;width:100%;height:300px;object-fit:contain;border-radius:10px;}p{font-size:12px;line-height:1.7;font-weight:300;flex-grow:1;padding:0 3rem;font-size:1.5rem;text-align:center;overflow:hidden;}.buttonList{display:grid;width:100%;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));grid-gap:1px;background:white;border-bottom-left-radius:10px;border-bottom-right-radius:10px;a{display:flex;align-items:center;justify-content:center;}& > *{background:", ";color:white;border:0;font-size:1.45rem;font-weight:600;padding:1rem 0.45rem;font-family:Montserrat;cursor:pointer;transition:background-color 0.3s;outline:none;&:hover{background-color:", ";}}*:nth-child(1){border-bottom-left-radius:10px;}*:last-child{border-bottom-right-radius:10px;}}"], function (props) {
   return props.theme.olive;
 }, function (props) {
   return props.theme.olive;
@@ -1593,16 +1593,18 @@ var Title = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h3.withConf
 /*!*******************!*\
   !*** ./config.js ***!
   \*******************/
-/*! exports provided: endpoint, perPage */
+/*! exports provided: endpoint, perPage, mainPageItems */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "endpoint", function() { return endpoint; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "perPage", function() { return perPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mainPageItems", function() { return mainPageItems; });
 // This is client side config only - don't put anything in here that shouldn't be public!
 var endpoint = "http://localhost:4444";
 var perPage = 6;
+var mainPageItems = 3;
 
 /***/ }),
 

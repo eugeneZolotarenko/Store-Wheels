@@ -7,6 +7,7 @@ const NavStyles = styled.ul`
   justify-self: end;
   font-size: 1.5rem;
   z-index: 999;
+  min-height: 50px;
   @media (max-width: 700px) {
     width: fit-content;
     align-self: center;

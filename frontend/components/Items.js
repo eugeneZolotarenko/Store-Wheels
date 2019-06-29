@@ -60,11 +60,9 @@ class Items extends Component {
             fetchPolicy="network-only"
             variables={{
               skip: this.props.page * perPage - perPage
-              // first: PerPage
             }}
           >
             {({ data, error, loading }) => {
-              // if (loading) return <p>Loading...</p>;
               if (loading)
                 return (
                   <HashLoader
@@ -92,4 +90,5 @@ class Items extends Component {
 }
 
 export default Items;
+export { ItemsList };
 export { ALL_ITEMS_QUERY };

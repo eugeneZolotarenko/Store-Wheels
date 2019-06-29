@@ -521,6 +521,60 @@ DisplayError.propTypes = {
 
 /***/ }),
 
+/***/ "./components/Footer.js":
+/*!******************************!*\
+  !*** ./components/Footer.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+var _jsxFileName = "C:\\Users\\User\\Desktop\\Advanced-React\\store-wheels\\frontend\\components\\Footer.js";
+
+
+var StyleFooter = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].footer.withConfig({
+  displayName: "Footer__StyleFooter",
+  componentId: "sc-7kxx45-0"
+})(["height:100px;background-color:", ";position:relative;margin-top:78px;display:flex;align-items:center;justify-content:center;.wave{background-image:url(../static/wave-2.svg);background-position-x:right;background-repeat:no-repeat;width:100%;height:78px;position:absolute;top:calc(0% - 78px);right:0;}a{font-size:18px;color:", ";font-weight:500;text-align:center;&:hover{color:", ";}}"], function (props) {
+  return props.theme.grey;
+}, function (props) {
+  return props.theme.semiblack;
+}, function (props) {
+  return props.theme.pink;
+});
+
+var Foooter = function Foooter() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyleFooter, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "wave",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://github.com/eugeneZolotarenko",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, "Designed & Developed by Eugene Zolotarenko"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Foooter);
+
+/***/ }),
+
 /***/ "./components/Header.js":
 /*!******************************!*\
   !*** ./components/Header.js ***!
@@ -1009,7 +1063,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-/* harmony import */ var _components_Meta__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Meta */ "./components/Meta.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_Meta__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Meta */ "./components/Meta.js");
 var _jsxFileName = "C:\\Users\\User\\Desktop\\Advanced-React\\store-wheels\\frontend\\components\\Page.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -1031,7 +1086,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  html {\n    font-family: Montserrat;\n    box-sizing: border-box;\n    font-size: 10px;\n    min-width: 320px;\n    ::-webkit-scrollbar {\n      width: 10px;\n    }\n    ::-webkit-scrollbar-thumb {\n      border-width: 1px 1px 1px 2px;\n      border-color: #777;\n      background-color: #C1C4C3;\n    }\n    ::-webkit-scrollbar-thumb:hover {\n      background-color: #aaa;\n    }\n    ::-webkit-scrollbar-track {\n      background-color: transparent;\n      border-width: 0;\n    }\n    ::-webkit-scrollbar-track:hover {\n      background-color: #eee;\n    }\n  };\n  *, *:before, *:after{\n    box-sizing: border-box;\n  };\n  body {\n    padding: 0;\n    margin: 0;\n    font-size: 1.7rem;\n  };\n  a{\n    text-decoration: none;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  html {\n    font-family: Montserrat;\n    box-sizing: border-box;\n    font-size: 10px;\n    min-width: 320px;\n    ::-webkit-scrollbar {\n      width: 10px;\n      box-shadow: black;\n      border-color: black;\n    }\n    ::-webkit-scrollbar-thumb {\n      border-width: 1px 1px 1px 2px;\n      border-color: #777;\n      background-color: #C1C4C3;\n    }\n    ::-webkit-scrollbar-thumb:hover {\n      background-color: #aaa;\n    }\n    ::-webkit-scrollbar-track {\n      background-color: transparent;\n      border-width: 0;\n    }\n    ::-webkit-scrollbar-track:hover {\n      background-color: #eee;\n    }\n  };\n  *, *:before, *:after{\n    box-sizing: border-box;\n  };\n  body {\n    padding: 0;\n    margin: 0;\n    font-size: 1.7rem;\n  };\n  a{\n    text-decoration: none;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1041,6 +1096,7 @@ function _templateObject() {
 }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -1084,34 +1140,40 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 72
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 73
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 74
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 75
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 76
         },
         __self: this
-      }, this.props.children)));
+      }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 77
+        },
+        __self: this
+      })));
     }
   }]);
 
@@ -1681,7 +1743,7 @@ __webpack_require__.r(__webpack_exports__);
 var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].ul.withConfig({
   displayName: "NavStyles",
   componentId: "sc-11c0d2g-0"
-})(["margin:0;padding:0;display:flex;justify-self:end;font-size:1.5rem;z-index:999;@media (max-width:700px){width:fit-content;align-self:center;flex-direction:column;text-align:center;transition:0.3s;}.active{color:", ";}a,.signout-btn{padding:1rem 2rem;display:flex;align-items:center;position:relative;text-transform:uppercase;font-weight:600;font-size:1em;background:none;border:0;cursor:pointer;font-family:Montserrat;color:", ";transition:all 0.3s;&:hover{color:", ";}@media (max-width:900px){padding:1rem 1.1rem;}@media (max-width:700px){padding:0.8rem 10px;text-align:center;justify-content:center;}}.signout-btn{@media (max-width:700px){width:100%;color:white;}}&:hover,&:focus{outline:none;}.burger-container{z-index:999;cursor:pointer;border:none;background:none;outline:none;width:fit-content;@media (min-width:701px){display:none;}}.burger-container .burger-line-1,.burger-container .burger-line-2,.burger-container .burger-line-3{border-radius:2px;width:35px;height:5px;background-color:", ";margin:6px 0;-webkit-transition:0.4s;transition:0.4s;}.change-burger .burger-line-1{-webkit-transform:rotate(-45deg) translate(-9px,6px);transform:rotate(-45deg) translate(-9px,6px);}.change-burger .burger-line-2{opacity:0;}.change-burger .burger-line-3{-webkit-transform:rotate(45deg) translate(-8px,-8px);transform:rotate(45deg) translate(-8px,-8px);}@media (max-width:1300px){font-size:1.6rem;}.menu{@media (min-width:701px){display:flex;}@media (max-width:700px){transition:0.4s ease-in-out;position:absolute;background-color:", ";width:100%;left:0;transform:translateY(55px);border-bottom-left-radius:5px;border-bottom-right-radius:5px;z-index:900;a,button{color:", ";font-weight:700;}}}.hide-menu{@media (max-width:700px){transform:translateY(-150%);transition:0.4s ease-in-out;}}"], function (props) {
+})(["margin:0;padding:0;display:flex;justify-self:end;font-size:1.5rem;z-index:999;min-height:50px;@media (max-width:700px){width:fit-content;align-self:center;flex-direction:column;text-align:center;transition:0.3s;}.active{color:", ";}a,.signout-btn{padding:1rem 2rem;display:flex;align-items:center;position:relative;text-transform:uppercase;font-weight:600;font-size:1em;background:none;border:0;cursor:pointer;font-family:Montserrat;color:", ";transition:all 0.3s;&:hover{color:", ";}@media (max-width:900px){padding:1rem 1.1rem;}@media (max-width:700px){padding:0.8rem 10px;text-align:center;justify-content:center;}}.signout-btn{@media (max-width:700px){width:100%;color:white;}}&:hover,&:focus{outline:none;}.burger-container{z-index:999;cursor:pointer;border:none;background:none;outline:none;width:fit-content;@media (min-width:701px){display:none;}}.burger-container .burger-line-1,.burger-container .burger-line-2,.burger-container .burger-line-3{border-radius:2px;width:35px;height:5px;background-color:", ";margin:6px 0;-webkit-transition:0.4s;transition:0.4s;}.change-burger .burger-line-1{-webkit-transform:rotate(-45deg) translate(-9px,6px);transform:rotate(-45deg) translate(-9px,6px);}.change-burger .burger-line-2{opacity:0;}.change-burger .burger-line-3{-webkit-transform:rotate(45deg) translate(-8px,-8px);transform:rotate(45deg) translate(-8px,-8px);}@media (max-width:1300px){font-size:1.6rem;}.menu{@media (min-width:701px){display:flex;}@media (max-width:700px){transition:0.4s ease-in-out;position:absolute;background-color:", ";width:100%;left:0;transform:translateY(55px);border-bottom-left-radius:5px;border-bottom-right-radius:5px;z-index:900;a,button{color:", ";font-weight:700;}}}.hide-menu{@media (max-width:700px){transform:translateY(-150%);transition:0.4s ease-in-out;}}"], function (props) {
   return props.theme.pink;
 }, function (props) {
   return props.theme.semiblack;
@@ -1746,16 +1808,18 @@ var Supreme = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].h3.withC
 /*!*******************!*\
   !*** ./config.js ***!
   \*******************/
-/*! exports provided: endpoint, perPage */
+/*! exports provided: endpoint, perPage, mainPageItems */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "endpoint", function() { return endpoint; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "perPage", function() { return perPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mainPageItems", function() { return mainPageItems; });
 // This is client side config only - don't put anything in here that shouldn't be public!
 var endpoint = "http://localhost:4444";
 var perPage = 6;
+var mainPageItems = 3;
 
 /***/ }),
 
@@ -15400,7 +15464,7 @@ module.exports = gql;
   !*** ./node_modules/graphql/error/GraphQLError.mjs ***!
   \*****************************************************/
 /*! exports provided: GraphQLError */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15551,7 +15615,7 @@ GraphQLError.prototype = Object.create(Error.prototype, {
   !*** ./node_modules/graphql/error/formatError.mjs ***!
   \****************************************************/
 /*! exports provided: formatError */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15596,7 +15660,7 @@ function formatError(error) {
   !*** ./node_modules/graphql/error/index.mjs ***!
   \**********************************************/
 /*! exports provided: GraphQLError, syntaxError, locatedError, printError, formatError */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15636,7 +15700,7 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/error/locatedError.mjs ***!
   \*****************************************************/
 /*! exports provided: locatedError */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15674,7 +15738,7 @@ function locatedError(originalError, nodes, path) {
   !*** ./node_modules/graphql/error/printError.mjs ***!
   \***************************************************/
 /*! exports provided: printError */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15825,7 +15889,7 @@ function lpad(len, str) {
   !*** ./node_modules/graphql/error/syntaxError.mjs ***!
   \****************************************************/
 /*! exports provided: syntaxError */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -15856,7 +15920,7 @@ function syntaxError(source, position, description) {
   !*** ./node_modules/graphql/execution/execute.mjs ***!
   \****************************************************/
 /*! exports provided: execute, responsePathAsArray, addPath, assertValidExecutionArguments, buildExecutionContext, collectFields, buildResolveInfo, resolveFieldValueOrError, defaultFieldResolver, getFieldDef */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16689,7 +16753,7 @@ function getFieldDef(schema, parentType, fieldName) {
   !*** ./node_modules/graphql/execution/index.mjs ***!
   \**************************************************/
 /*! exports provided: execute, defaultFieldResolver, responsePathAsArray, getDirectiveValues */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16721,7 +16785,7 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/execution/values.mjs ***!
   \***************************************************/
 /*! exports provided: getVariableValues, getArgumentValues, getDirectiveValues */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -16963,7 +17027,7 @@ function hasOwnProperty(obj, prop) {
   !*** ./node_modules/graphql/graphql.mjs ***!
   \******************************************/
 /*! exports provided: graphql, graphqlSync */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17055,7 +17119,7 @@ function graphqlImpl(schema, source, rootValue, contextValue, variableValues, op
   !*** ./node_modules/graphql/index.mjs ***!
   \****************************************/
 /*! exports provided: graphql, graphqlSync, GraphQLSchema, GraphQLScalarType, GraphQLObjectType, GraphQLInterfaceType, GraphQLUnionType, GraphQLEnumType, GraphQLInputObjectType, GraphQLList, GraphQLNonNull, GraphQLDirective, TypeKind, specifiedScalarTypes, GraphQLInt, GraphQLFloat, GraphQLString, GraphQLBoolean, GraphQLID, specifiedDirectives, GraphQLIncludeDirective, GraphQLSkipDirective, GraphQLDeprecatedDirective, DEFAULT_DEPRECATION_REASON, SchemaMetaFieldDef, TypeMetaFieldDef, TypeNameMetaFieldDef, introspectionTypes, __Schema, __Directive, __DirectiveLocation, __Type, __Field, __InputValue, __EnumValue, __TypeKind, isSchema, isDirective, isType, isScalarType, isObjectType, isInterfaceType, isUnionType, isEnumType, isInputObjectType, isListType, isNonNullType, isInputType, isOutputType, isLeafType, isCompositeType, isAbstractType, isWrappingType, isNullableType, isNamedType, isRequiredArgument, isRequiredInputField, isSpecifiedScalarType, isIntrospectionType, isSpecifiedDirective, assertType, assertScalarType, assertObjectType, assertInterfaceType, assertUnionType, assertEnumType, assertInputObjectType, assertListType, assertNonNullType, assertInputType, assertOutputType, assertLeafType, assertCompositeType, assertAbstractType, assertWrappingType, assertNullableType, assertNamedType, getNullableType, getNamedType, validateSchema, assertValidSchema, Source, getLocation, parse, parseValue, parseType, print, visit, visitInParallel, visitWithTypeInfo, getVisitFn, Kind, TokenKind, DirectiveLocation, BREAK, isDefinitionNode, isExecutableDefinitionNode, isSelectionNode, isValueNode, isTypeNode, isTypeSystemDefinitionNode, isTypeDefinitionNode, isTypeSystemExtensionNode, isTypeExtensionNode, execute, defaultFieldResolver, responsePathAsArray, getDirectiveValues, subscribe, createSourceEventStream, validate, ValidationContext, specifiedRules, FieldsOnCorrectTypeRule, FragmentsOnCompositeTypesRule, KnownArgumentNamesRule, KnownDirectivesRule, KnownFragmentNamesRule, KnownTypeNamesRule, LoneAnonymousOperationRule, NoFragmentCyclesRule, NoUndefinedVariablesRule, NoUnusedFragmentsRule, NoUnusedVariablesRule, OverlappingFieldsCanBeMergedRule, PossibleFragmentSpreadsRule, ProvidedRequiredArgumentsRule, ScalarLeafsRule, SingleFieldSubscriptionsRule, UniqueArgumentNamesRule, UniqueDirectivesPerLocationRule, UniqueFragmentNamesRule, UniqueInputFieldNamesRule, UniqueOperationNamesRule, UniqueVariableNamesRule, ValuesOfCorrectTypeRule, VariablesAreInputTypesRule, VariablesInAllowedPositionRule, GraphQLError, formatError, printError, getIntrospectionQuery, introspectionQuery, getOperationAST, getOperationRootType, introspectionFromSchema, buildClientSchema, buildASTSchema, buildSchema, getDescription, extendSchema, lexicographicSortSchema, printSchema, printIntrospectionSchema, printType, typeFromAST, valueFromAST, valueFromASTUntyped, astFromValue, TypeInfo, coerceValue, isValidJSValue, isValidLiteralValue, concatAST, separateOperations, isEqualType, isTypeSubTypeOf, doTypesOverlap, assertValidName, isValidNameError, findBreakingChanges, findDangerousChanges, BreakingChangeType, DangerousChangeType, findDeprecatedUsages */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17472,7 +17536,7 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/jsutils/defineToJSON.mjs ***!
   \*******************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17501,7 +17565,7 @@ function applyToJSON(classObject) {
   !*** ./node_modules/graphql/jsutils/defineToStringTag.mjs ***!
   \************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17545,7 +17609,7 @@ function applyToStringTag(classObject) {
   !*** ./node_modules/graphql/jsutils/find.mjs ***!
   \***********************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17573,7 +17637,7 @@ function find(list, predicate) {
   !*** ./node_modules/graphql/jsutils/inspect.mjs ***!
   \**************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17628,7 +17692,7 @@ function inspect(value) {
   !*** ./node_modules/graphql/jsutils/instanceOf.mjs ***!
   \*****************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17673,7 +17737,7 @@ function instanceOf(value, constructor) {
   !*** ./node_modules/graphql/jsutils/invariant.mjs ***!
   \****************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17700,7 +17764,7 @@ function invariant(condition, message) {
   !*** ./node_modules/graphql/jsutils/isFinite.mjs ***!
   \***************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17728,7 +17792,7 @@ var isFinite = Number.isFinite || function (value) {
   !*** ./node_modules/graphql/jsutils/isInteger.mjs ***!
   \****************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17756,7 +17820,7 @@ var isInteger = Number.isInteger || function (value) {
   !*** ./node_modules/graphql/jsutils/isInvalid.mjs ***!
   \****************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17784,7 +17848,7 @@ function isInvalid(value) {
   !*** ./node_modules/graphql/jsutils/isNullish.mjs ***!
   \****************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17812,7 +17876,7 @@ function isNullish(value) {
   !*** ./node_modules/graphql/jsutils/isPromise.mjs ***!
   \****************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17842,7 +17906,7 @@ function isPromise(value) {
   !*** ./node_modules/graphql/jsutils/keyMap.mjs ***!
   \*************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17892,7 +17956,7 @@ function keyMap(list, keyFn) {
   !*** ./node_modules/graphql/jsutils/keyValMap.mjs ***!
   \****************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17936,7 +18000,7 @@ function keyValMap(list, keyFn, valFn) {
   !*** ./node_modules/graphql/jsutils/memoize3.mjs ***!
   \***************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -17999,7 +18063,7 @@ function memoize3(fn) {
   !*** ./node_modules/graphql/jsutils/objectValues.mjs ***!
   \*******************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18029,7 +18093,7 @@ var objectValues = Object.values || function (obj) {
   !*** ./node_modules/graphql/jsutils/orList.mjs ***!
   \*************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18061,7 +18125,7 @@ function orList(items) {
   !*** ./node_modules/graphql/jsutils/promiseForObject.mjs ***!
   \***********************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18102,7 +18166,7 @@ function promiseForObject(object) {
   !*** ./node_modules/graphql/jsutils/promiseReduce.mjs ***!
   \********************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18140,7 +18204,7 @@ function promiseReduce(values, callback, initialValue) {
   !*** ./node_modules/graphql/jsutils/quotedOrList.mjs ***!
   \*******************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18172,7 +18236,7 @@ function quotedOrList(items) {
   !*** ./node_modules/graphql/jsutils/suggestionList.mjs ***!
   \*********************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18273,7 +18337,7 @@ function lexicalDistance(aStr, bStr) {
   !*** ./node_modules/graphql/language/blockStringValue.mjs ***!
   \************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18352,7 +18416,7 @@ function isBlank(str) {
   !*** ./node_modules/graphql/language/directiveLocation.mjs ***!
   \*************************************************************/
 /*! exports provided: DirectiveLocation */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18403,7 +18467,7 @@ var DirectiveLocation = Object.freeze({
   !*** ./node_modules/graphql/language/index.mjs ***!
   \*************************************************/
 /*! exports provided: getLocation, Kind, createLexer, TokenKind, parse, parseValue, parseType, print, Source, visit, visitInParallel, visitWithTypeInfo, getVisitFn, BREAK, isDefinitionNode, isExecutableDefinitionNode, isSelectionNode, isValueNode, isTypeNode, isTypeSystemDefinitionNode, isTypeDefinitionNode, isTypeSystemExtensionNode, isTypeExtensionNode, DirectiveLocation */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18489,7 +18553,7 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/language/kinds.mjs ***!
   \*************************************************/
 /*! exports provided: Kind */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -18573,7 +18637,7 @@ var Kind = Object.freeze({
   !*** ./node_modules/graphql/language/lexer.mjs ***!
   \*************************************************/
 /*! exports provided: createLexer, TokenKind, getTokenDesc */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -19222,7 +19286,7 @@ function readName(source, start, line, col, prev) {
   !*** ./node_modules/graphql/language/location.mjs ***!
   \****************************************************/
 /*! exports provided: getLocation */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -19268,7 +19332,7 @@ function getLocation(source, position) {
   !*** ./node_modules/graphql/language/parser.mjs ***!
   \**************************************************/
 /*! exports provided: parse, parseValue, parseType, parseConstValue, parseTypeReference, parseNamedType */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -20797,7 +20861,7 @@ function many(lexer, openKind, parseFn, closeKind) {
   !*** ./node_modules/graphql/language/predicates.mjs ***!
   \******************************************************/
 /*! exports provided: isDefinitionNode, isExecutableDefinitionNode, isSelectionNode, isValueNode, isTypeNode, isTypeSystemDefinitionNode, isTypeDefinitionNode, isTypeSystemExtensionNode, isTypeExtensionNode */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -20855,7 +20919,7 @@ function isTypeExtensionNode(node) {
   !*** ./node_modules/graphql/language/printer.mjs ***!
   \***************************************************/
 /*! exports provided: print */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -21179,7 +21243,7 @@ function printBlockString(value, isDescription) {
   !*** ./node_modules/graphql/language/source.mjs ***!
   \**************************************************/
 /*! exports provided: Source */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -21233,7 +21297,7 @@ Object(_jsutils_defineToStringTag__WEBPACK_IMPORTED_MODULE_1__["default"])(Sourc
   !*** ./node_modules/graphql/language/visitor.mjs ***!
   \***************************************************/
 /*! exports provided: QueryDocumentKeys, BREAK, visit, visitInParallel, visitWithTypeInfo, getVisitFn */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -21683,7 +21747,7 @@ function getVisitFn(visitor, kind, isLeaving) {
   !*** ./node_modules/graphql/subscription/index.mjs ***!
   \*****************************************************/
 /*! exports provided: subscribe, createSourceEventStream */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -21709,7 +21773,7 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/subscription/mapAsyncIterator.mjs ***!
   \****************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -21809,7 +21873,7 @@ function iteratorResult(value) {
   !*** ./node_modules/graphql/subscription/subscribe.mjs ***!
   \*********************************************************/
 /*! exports provided: subscribe, createSourceEventStream */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -21984,7 +22048,7 @@ function createSourceEventStream(schema, document, rootValue, contextValue, vari
   !*** ./node_modules/graphql/type/definition.mjs ***!
   \**************************************************/
 /*! exports provided: isType, assertType, isScalarType, assertScalarType, isObjectType, assertObjectType, isInterfaceType, assertInterfaceType, isUnionType, assertUnionType, isEnumType, assertEnumType, isInputObjectType, assertInputObjectType, isListType, assertListType, isNonNullType, assertNonNullType, isInputType, assertInputType, isOutputType, assertOutputType, isLeafType, assertLeafType, isCompositeType, assertCompositeType, isAbstractType, assertAbstractType, GraphQLList, GraphQLNonNull, isWrappingType, assertWrappingType, isNullableType, assertNullableType, getNullableType, isNamedType, assertNamedType, getNamedType, GraphQLScalarType, GraphQLObjectType, isRequiredArgument, GraphQLInterfaceType, GraphQLUnionType, GraphQLEnumType, GraphQLInputObjectType, isRequiredInputField */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -22919,7 +22983,7 @@ function isRequiredInputField(field) {
   !*** ./node_modules/graphql/type/directives.mjs ***!
   \**************************************************/
 /*! exports provided: isDirective, GraphQLDirective, GraphQLIncludeDirective, GraphQLSkipDirective, DEFAULT_DEPRECATION_REASON, GraphQLDeprecatedDirective, specifiedDirectives, isSpecifiedDirective */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -23087,7 +23151,7 @@ function isSpecifiedDirective(directive) {
   !*** ./node_modules/graphql/type/index.mjs ***!
   \*********************************************/
 /*! exports provided: isSchema, GraphQLSchema, isType, isScalarType, isObjectType, isInterfaceType, isUnionType, isEnumType, isInputObjectType, isListType, isNonNullType, isInputType, isOutputType, isLeafType, isCompositeType, isAbstractType, isWrappingType, isNullableType, isNamedType, isRequiredArgument, isRequiredInputField, assertType, assertScalarType, assertObjectType, assertInterfaceType, assertUnionType, assertEnumType, assertInputObjectType, assertListType, assertNonNullType, assertInputType, assertOutputType, assertLeafType, assertCompositeType, assertAbstractType, assertWrappingType, assertNullableType, assertNamedType, getNullableType, getNamedType, GraphQLScalarType, GraphQLObjectType, GraphQLInterfaceType, GraphQLUnionType, GraphQLEnumType, GraphQLInputObjectType, GraphQLList, GraphQLNonNull, isDirective, GraphQLDirective, isSpecifiedDirective, specifiedDirectives, GraphQLIncludeDirective, GraphQLSkipDirective, GraphQLDeprecatedDirective, DEFAULT_DEPRECATION_REASON, isSpecifiedScalarType, specifiedScalarTypes, GraphQLInt, GraphQLFloat, GraphQLString, GraphQLBoolean, GraphQLID, TypeKind, isIntrospectionType, introspectionTypes, __Schema, __Directive, __DirectiveLocation, __Type, __Field, __InputValue, __EnumValue, __TypeKind, SchemaMetaFieldDef, TypeMetaFieldDef, TypeNameMetaFieldDef, validateSchema, assertValidSchema */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -23278,7 +23342,7 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/type/introspection.mjs ***!
   \*****************************************************/
 /*! exports provided: __Schema, __Directive, __DirectiveLocation, __Type, __Field, __InputValue, __EnumValue, TypeKind, __TypeKind, SchemaMetaFieldDef, TypeMetaFieldDef, TypeNameMetaFieldDef, introspectionTypes, isIntrospectionType */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -23811,7 +23875,7 @@ function isIntrospectionType(type) {
   !*** ./node_modules/graphql/type/scalars.mjs ***!
   \***********************************************/
 /*! exports provided: GraphQLInt, GraphQLFloat, GraphQLString, GraphQLBoolean, GraphQLID, specifiedScalarTypes, isSpecifiedScalarType */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -24057,7 +24121,7 @@ function isSpecifiedScalarType(type) {
   !*** ./node_modules/graphql/type/schema.mjs ***!
   \**********************************************/
 /*! exports provided: isSchema, GraphQLSchema */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -24405,7 +24469,7 @@ function typeMapDirectiveReducer(map, directive) {
   !*** ./node_modules/graphql/type/validate.mjs ***!
   \************************************************/
 /*! exports provided: validateSchema, assertValidSchema */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -25225,7 +25289,7 @@ function getEnumValueNodes(enumType, valueName) {
   !*** ./node_modules/graphql/utilities/TypeInfo.mjs ***!
   \*****************************************************/
 /*! exports provided: TypeInfo */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -25580,7 +25644,7 @@ function getFieldDef(schema, parentType, fieldNode) {
   !*** ./node_modules/graphql/utilities/assertValidName.mjs ***!
   \************************************************************/
 /*! exports provided: assertValidName, isValidNameError */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -25635,7 +25699,7 @@ function isValidNameError(name, node) {
   !*** ./node_modules/graphql/utilities/astFromValue.mjs ***!
   \*********************************************************/
 /*! exports provided: astFromValue */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -25854,7 +25918,7 @@ var integerStringRegExp = /^-?(0|[1-9][0-9]*)$/;
   !*** ./node_modules/graphql/utilities/buildASTSchema.mjs ***!
   \***********************************************************/
 /*! exports provided: buildASTSchema, ASTDefinitionBuilder, getDescription, buildSchema */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -26350,7 +26414,7 @@ function buildSchema(source, options) {
   !*** ./node_modules/graphql/utilities/buildClientSchema.mjs ***!
   \**************************************************************/
 /*! exports provided: buildClientSchema */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -26677,7 +26741,7 @@ function buildClientSchema(introspection, options) {
   !*** ./node_modules/graphql/utilities/coerceValue.mjs ***!
   \********************************************************/
 /*! exports provided: coerceValue */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -26892,7 +26956,7 @@ var hasOwnProperty = Object.prototype.hasOwnProperty;
   !*** ./node_modules/graphql/utilities/concatAST.mjs ***!
   \******************************************************/
 /*! exports provided: concatAST */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -26935,7 +26999,7 @@ function concatAST(asts) {
   !*** ./node_modules/graphql/utilities/extendSchema.mjs ***!
   \*********************************************************/
 /*! exports provided: extendSchema */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -27742,7 +27806,7 @@ function checkExtensionNode(type, node) {
   !*** ./node_modules/graphql/utilities/findBreakingChanges.mjs ***!
   \****************************************************************/
 /*! exports provided: BreakingChangeType, DangerousChangeType, findBreakingChanges, findDangerousChanges, findRemovedTypes, findTypesThatChangedKind, findArgChanges, findFieldsThatChangedTypeOnObjectOrInterfaceTypes, findFieldsThatChangedTypeOnInputObjectTypes, findTypesRemovedFromUnions, findTypesAddedToUnions, findValuesRemovedFromEnums, findValuesAddedToEnums, findInterfacesRemovedFromObjectTypes, findInterfacesAddedToObjectTypes, findRemovedDirectives, findRemovedDirectiveArgs, findAddedNonNullDirectiveArgs, findRemovedLocationsForDirective, findRemovedDirectiveLocations */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -28977,7 +29041,7 @@ function getArgumentMapForDirective(directive) {
   !*** ./node_modules/graphql/utilities/findDeprecatedUsages.mjs ***!
   \*****************************************************************/
 /*! exports provided: findDeprecatedUsages */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29043,7 +29107,7 @@ function findDeprecatedUsages(schema, ast) {
   !*** ./node_modules/graphql/utilities/getOperationAST.mjs ***!
   \************************************************************/
 /*! exports provided: getOperationAST */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29096,7 +29160,7 @@ function getOperationAST(documentAST, operationName) {
   !*** ./node_modules/graphql/utilities/getOperationRootType.mjs ***!
   \*****************************************************************/
 /*! exports provided: getOperationRootType */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29156,7 +29220,7 @@ function getOperationRootType(schema, operation) {
   !*** ./node_modules/graphql/utilities/index.mjs ***!
   \**************************************************/
 /*! exports provided: getIntrospectionQuery, introspectionQuery, getOperationAST, getOperationRootType, introspectionFromSchema, buildClientSchema, buildASTSchema, buildSchema, getDescription, extendSchema, lexicographicSortSchema, printSchema, printType, printIntrospectionSchema, typeFromAST, valueFromAST, valueFromASTUntyped, astFromValue, TypeInfo, coerceValue, isValidJSValue, isValidLiteralValue, concatAST, separateOperations, isEqualType, isTypeSubTypeOf, doTypesOverlap, assertValidName, isValidNameError, BreakingChangeType, DangerousChangeType, findBreakingChanges, findDangerousChanges, findDeprecatedUsages */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29314,7 +29378,7 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/utilities/introspectionFromSchema.mjs ***!
   \********************************************************************/
 /*! exports provided: introspectionFromSchema */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29359,7 +29423,7 @@ function introspectionFromSchema(schema, options) {
   !*** ./node_modules/graphql/utilities/introspectionQuery.mjs ***!
   \***************************************************************/
 /*! exports provided: getIntrospectionQuery, introspectionQuery */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29392,7 +29456,7 @@ var introspectionQuery = getIntrospectionQuery();
   !*** ./node_modules/graphql/utilities/isValidJSValue.mjs ***!
   \***********************************************************/
 /*! exports provided: isValidJSValue */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29427,7 +29491,7 @@ function isValidJSValue(value, type) {
   !*** ./node_modules/graphql/utilities/isValidLiteralValue.mjs ***!
   \****************************************************************/
 /*! exports provided: isValidLiteralValue */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29480,7 +29544,7 @@ function isValidLiteralValue(type, valueNode) {
   !*** ./node_modules/graphql/utilities/lexicographicSortSchema.mjs ***!
   \********************************************************************/
 /*! exports provided: lexicographicSortSchema */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29712,7 +29776,7 @@ function sortBy(array, mapToKey) {
   !*** ./node_modules/graphql/utilities/schemaPrinter.mjs ***!
   \**********************************************************/
 /*! exports provided: printSchema, printIntrospectionSchema, printType */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30057,7 +30121,7 @@ function breakLine(line, maxLen) {
   !*** ./node_modules/graphql/utilities/separateOperations.mjs ***!
   \***************************************************************/
 /*! exports provided: separateOperations */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30166,7 +30230,7 @@ function collectTransitiveDependencies(collected, depGraph, fromName) {
   !*** ./node_modules/graphql/utilities/typeComparators.mjs ***!
   \************************************************************/
 /*! exports provided: isEqualType, isTypeSubTypeOf, doTypesOverlap */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30299,7 +30363,7 @@ function doTypesOverlap(schema, typeA, typeB) {
   !*** ./node_modules/graphql/utilities/typeFromAST.mjs ***!
   \********************************************************/
 /*! exports provided: typeFromAST */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30346,7 +30410,7 @@ function typeFromAST(schema, typeNode) {
   !*** ./node_modules/graphql/utilities/valueFromAST.mjs ***!
   \*********************************************************/
 /*! exports provided: valueFromAST */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30556,7 +30620,7 @@ function isMissingVariable(valueNode, variables) {
   !*** ./node_modules/graphql/utilities/valueFromASTUntyped.mjs ***!
   \****************************************************************/
 /*! exports provided: valueFromASTUntyped */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30637,7 +30701,7 @@ function valueFromASTUntyped(valueNode, variables) {
   !*** ./node_modules/graphql/validation/ValidationContext.mjs ***!
   \***************************************************************/
 /*! exports provided: ASTValidationContext, SDLValidationContext, ValidationContext */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -30918,7 +30982,7 @@ function (_ASTValidationContext2) {
   !*** ./node_modules/graphql/validation/index.mjs ***!
   \***************************************************/
 /*! exports provided: validate, ValidationContext, specifiedRules, FieldsOnCorrectTypeRule, FragmentsOnCompositeTypesRule, KnownArgumentNamesRule, KnownDirectivesRule, KnownFragmentNamesRule, KnownTypeNamesRule, LoneAnonymousOperationRule, NoFragmentCyclesRule, NoUndefinedVariablesRule, NoUnusedFragmentsRule, NoUnusedVariablesRule, OverlappingFieldsCanBeMergedRule, PossibleFragmentSpreadsRule, ProvidedRequiredArgumentsRule, ScalarLeafsRule, SingleFieldSubscriptionsRule, UniqueArgumentNamesRule, UniqueDirectivesPerLocationRule, UniqueFragmentNamesRule, UniqueInputFieldNamesRule, UniqueOperationNamesRule, UniqueVariableNamesRule, ValuesOfCorrectTypeRule, VariablesAreInputTypesRule, VariablesInAllowedPositionRule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31075,7 +31139,7 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/graphql/validation/rules/ExecutableDefinitions.mjs ***!
   \*************************************************************************/
 /*! exports provided: nonExecutableDefinitionMessage, ExecutableDefinitions */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31147,7 +31211,7 @@ function ExecutableDefinitions(context) {
   !*** ./node_modules/graphql/validation/rules/FieldsOnCorrectType.mjs ***!
   \***********************************************************************/
 /*! exports provided: undefinedFieldMessage, FieldsOnCorrectType */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31314,7 +31378,7 @@ function getSuggestedFieldNames(schema, type, fieldName) {
   !*** ./node_modules/graphql/validation/rules/FragmentsOnCompositeTypes.mjs ***!
   \*****************************************************************************/
 /*! exports provided: inlineFragmentOnNonCompositeErrorMessage, fragmentOnNonCompositeErrorMessage, FragmentsOnCompositeTypes */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31381,7 +31445,7 @@ function FragmentsOnCompositeTypes(context) {
   !*** ./node_modules/graphql/validation/rules/KnownArgumentNames.mjs ***!
   \**********************************************************************/
 /*! exports provided: unknownArgMessage, unknownDirectiveArgMessage, KnownArgumentNames, KnownArgumentNamesOnDirectives */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31562,7 +31626,7 @@ function KnownArgumentNamesOnDirectives(context) {
   !*** ./node_modules/graphql/validation/rules/KnownDirectives.mjs ***!
   \*******************************************************************/
 /*! exports provided: unknownDirectiveMessage, misplacedDirectiveMessage, KnownDirectives */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31757,7 +31821,7 @@ function getDirectiveLocationForASTPath(ancestors) {
   !*** ./node_modules/graphql/validation/rules/KnownFragmentNames.mjs ***!
   \**********************************************************************/
 /*! exports provided: unknownFragmentMessage, KnownFragmentNames */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31803,7 +31867,7 @@ function KnownFragmentNames(context) {
   !*** ./node_modules/graphql/validation/rules/KnownTypeNames.mjs ***!
   \******************************************************************/
 /*! exports provided: unknownTypeMessage, KnownTypeNames */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31875,7 +31939,7 @@ function KnownTypeNames(context) {
   !*** ./node_modules/graphql/validation/rules/LoneAnonymousOperation.mjs ***!
   \**************************************************************************/
 /*! exports provided: anonOperationNotAloneMessage, LoneAnonymousOperation */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31926,7 +31990,7 @@ function LoneAnonymousOperation(context) {
   !*** ./node_modules/graphql/validation/rules/LoneSchemaDefinition.mjs ***!
   \************************************************************************/
 /*! exports provided: schemaDefinitionNotAloneMessage, canNotDefineSchemaWithinExtensionMessage, LoneSchemaDefinition */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -31982,7 +32046,7 @@ function LoneSchemaDefinition(context) {
   !*** ./node_modules/graphql/validation/rules/NoFragmentCycles.mjs ***!
   \********************************************************************/
 /*! exports provided: cycleErrorMessage, NoFragmentCycles */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32071,7 +32135,7 @@ function NoFragmentCycles(context) {
   !*** ./node_modules/graphql/validation/rules/NoUndefinedVariables.mjs ***!
   \************************************************************************/
 /*! exports provided: undefinedVarMessage, NoUndefinedVariables */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32149,7 +32213,7 @@ function NoUndefinedVariables(context) {
   !*** ./node_modules/graphql/validation/rules/NoUnusedFragments.mjs ***!
   \*********************************************************************/
 /*! exports provided: unusedFragMessage, NoUnusedFragments */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32238,7 +32302,7 @@ function NoUnusedFragments(context) {
   !*** ./node_modules/graphql/validation/rules/NoUnusedVariables.mjs ***!
   \*********************************************************************/
 /*! exports provided: unusedVariableMessage, NoUnusedVariables */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32323,7 +32387,7 @@ function NoUnusedVariables(context) {
   !*** ./node_modules/graphql/validation/rules/OverlappingFieldsCanBeMerged.mjs ***!
   \********************************************************************************/
 /*! exports provided: fieldsConflictMessage, OverlappingFieldsCanBeMerged */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -32930,7 +32994,7 @@ function _pairSetAdd(data, a, b, areMutuallyExclusive) {
   !*** ./node_modules/graphql/validation/rules/PossibleFragmentSpreads.mjs ***!
   \***************************************************************************/
 /*! exports provided: typeIncompatibleSpreadMessage, typeIncompatibleAnonSpreadMessage, PossibleFragmentSpreads */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -33010,7 +33074,7 @@ function getFragmentType(context, name) {
   !*** ./node_modules/graphql/validation/rules/ProvidedRequiredArguments.mjs ***!
   \*****************************************************************************/
 /*! exports provided: missingFieldArgMessage, missingDirectiveArgMessage, ProvidedRequiredArguments, ProvidedRequiredArgumentsOnDirectives */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -33204,7 +33268,7 @@ function isRequiredArgumentNode(arg) {
   !*** ./node_modules/graphql/validation/rules/ScalarLeafs.mjs ***!
   \***************************************************************/
 /*! exports provided: noSubselectionAllowedMessage, requiredSubselectionMessage, ScalarLeafs */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -33264,7 +33328,7 @@ function ScalarLeafs(context) {
   !*** ./node_modules/graphql/validation/rules/SingleFieldSubscriptions.mjs ***!
   \****************************************************************************/
 /*! exports provided: singleFieldOnlyMessage, SingleFieldSubscriptions */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -33308,7 +33372,7 @@ function SingleFieldSubscriptions(context) {
   !*** ./node_modules/graphql/validation/rules/UniqueArgumentNames.mjs ***!
   \***********************************************************************/
 /*! exports provided: duplicateArgMessage, UniqueArgumentNames */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -33364,7 +33428,7 @@ function UniqueArgumentNames(context) {
   !*** ./node_modules/graphql/validation/rules/UniqueDirectivesPerLocation.mjs ***!
   \*******************************************************************************/
 /*! exports provided: duplicateDirectiveMessage, UniqueDirectivesPerLocation */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -33442,7 +33506,7 @@ function UniqueDirectivesPerLocation(context) {
   !*** ./node_modules/graphql/validation/rules/UniqueFragmentNames.mjs ***!
   \***********************************************************************/
 /*! exports provided: duplicateFragmentNameMessage, UniqueFragmentNames */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -33494,7 +33558,7 @@ function UniqueFragmentNames(context) {
   !*** ./node_modules/graphql/validation/rules/UniqueInputFieldNames.mjs ***!
   \*************************************************************************/
 /*! exports provided: duplicateInputFieldMessage, UniqueInputFieldNames */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -33554,7 +33618,7 @@ function UniqueInputFieldNames(context) {
   !*** ./node_modules/graphql/validation/rules/UniqueOperationNames.mjs ***!
   \************************************************************************/
 /*! exports provided: duplicateOperationNameMessage, UniqueOperationNames */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -33608,7 +33672,7 @@ function UniqueOperationNames(context) {
   !*** ./node_modules/graphql/validation/rules/UniqueVariableNames.mjs ***!
   \***********************************************************************/
 /*! exports provided: duplicateVariableMessage, UniqueVariableNames */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -33658,7 +33722,7 @@ function UniqueVariableNames(context) {
   !*** ./node_modules/graphql/validation/rules/ValuesOfCorrectType.mjs ***!
   \***********************************************************************/
 /*! exports provided: badValueMessage, requiredFieldMessage, unknownFieldMessage, ValuesOfCorrectType */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -33840,7 +33904,7 @@ function enumTypeSuggestion(type, node) {
   !*** ./node_modules/graphql/validation/rules/VariablesAreInputTypes.mjs ***!
   \**************************************************************************/
 /*! exports provided: nonInputTypeOnVarMessage, VariablesAreInputTypes */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -33892,7 +33956,7 @@ function VariablesAreInputTypes(context) {
   !*** ./node_modules/graphql/validation/rules/VariablesInAllowedPosition.mjs ***!
   \******************************************************************************/
 /*! exports provided: badVarPosMessage, VariablesInAllowedPosition */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -34011,7 +34075,7 @@ function allowedVariableUsage(schema, varType, varDefaultValue, locationType, lo
   !*** ./node_modules/graphql/validation/specifiedRules.mjs ***!
   \************************************************************/
 /*! exports provided: specifiedRules, specifiedSDLRules */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -34125,7 +34189,7 @@ var specifiedSDLRules = [_rules_LoneSchemaDefinition__WEBPACK_IMPORTED_MODULE_26
   !*** ./node_modules/graphql/validation/validate.mjs ***!
   \******************************************************/
 /*! exports provided: validate, validateSDL, assertValidSDL, assertValidSDLExtension */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -34640,7 +34704,7 @@ var index = typeof fetch=='function' ? fetch.bind() : function(url, options) {
   !*** ./node_modules/iterall/index.mjs ***!
   \****************************************/
 /*! exports provided: $$iterator, isIterable, isArrayLike, isCollection, getIterator, getIteratorMethod, createIterator, forEach, $$asyncIterator, isAsyncIterable, getAsyncIterator, getAsyncIteratorMethod, createAsyncIterator, forAwaitEach */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);

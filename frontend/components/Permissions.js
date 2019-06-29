@@ -4,6 +4,7 @@ import gql from "graphql-tag";
 import Table from "./styles/Table";
 import SickButton from "./styles/SickButton";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
 const possiblePermissions = [
   "ADMIN",
@@ -36,16 +37,22 @@ const ALL_USERS_QUERY = gql`
   }
 `;
 
+const PermissionBlock = styled.footer`
+  min-height: calc(100vh - 248px);
+  padding-top: 25px;
+`;
+
 const headerStyle = {
   textAlign: "center",
   color: "${props => props.theme.semiblack}",
-  fontSize: "150%"
+  fontSize: "150%",
+  marginTop: "0"
 };
 
 const Permissions = props => (
   <Query query={ALL_USERS_QUERY}>
     {({ data, loading, error }) => (
-      <div>
+      <PermissionBlock>
         <Error error={error} />
         <div>
           <h3 style={headerStyle}>Manage Permissions of Users</h3>
@@ -67,7 +74,7 @@ const Permissions = props => (
             </tbody>
           </Table>
         </div>
-      </div>
+      </PermissionBlock>
     )}
   </Query>
 );

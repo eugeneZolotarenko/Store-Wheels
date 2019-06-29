@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled, { ThemeProvider, injectGlobal } from "styled-components";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Meta from "../components/Meta";
 
 const theme = {
@@ -33,6 +34,8 @@ injectGlobal`
     min-width: 320px;
     ::-webkit-scrollbar {
       width: 10px;
+      box-shadow: black;
+      border-color: black;
     }
     ::-webkit-scrollbar-thumb {
       border-width: 1px 1px 1px 2px;
@@ -71,6 +74,7 @@ class Page extends Component {
           <Meta />
           <Header />
           <Inner>{this.props.children}</Inner>
+          <Footer />
         </StyledPage>
       </ThemeProvider>
     );

@@ -7,6 +7,7 @@ const Item = styled.div`
   display: flex;
   flex-direction: column;
   box-shadow: 0px 4px 18px 0px ${props => props.theme.olive};
+  max-height: 620px;
   img {
     cursor: pointer;
     width: 100%;
@@ -21,6 +22,8 @@ const Item = styled.div`
     flex-grow: 1;
     padding: 0 3rem;
     font-size: 1.5rem;
+    text-align: center;
+    overflow: hidden;
   }
   .buttonList {
     display: grid;
