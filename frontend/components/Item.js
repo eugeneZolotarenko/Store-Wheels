@@ -16,8 +16,6 @@ export default class Item extends Component {
   render() {
     const { item } = this.props;
     return (
-      <User>
-        {({ data: { me } }) => (
           <ItemStyles>
             <Link
               href={{
@@ -42,8 +40,6 @@ export default class Item extends Component {
             <p>{item.description}</p>
             <ButtonList item={item} />
           </ItemStyles>
-        )}
-      </User>
     );
   }
 }

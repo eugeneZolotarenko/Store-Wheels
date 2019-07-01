@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1056,7 +1056,7 @@ var Pagination = function Pagination(props) {
         lineNumber: 31
       },
       __self: this
-    }, "Stock Wheels | ", page, " of ", pages)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    }, "Store Wheels | ", page, " of ", pages)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
       prefetch: true,
       href: {
         pathname: "items",
@@ -1528,8 +1528,10 @@ __webpack_require__.r(__webpack_exports__);
 var PaginationStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "PaginationStyles",
   componentId: "aduuar-0"
-})(["text-align:center;display:inline-grid;grid-template-columns:repeat(4,auto);align-items:stretch;justify-content:center;margin:2rem 0;border:2px solid ", ";border-radius:10px;& > *{display:flex;justify-content:center;align-items:center;margin:0;padding:15px 30px;border-right:1px solid ", ";@media (max-width:500px){padding:10px 15px;}&:last-child{border-right:0;}}a[aria-disabled=\"true\"]{color:", ";pointer-events:none;}"], function (props) {
+})(["text-align:center;display:inline-grid;grid-template-columns:repeat(4,auto);align-items:stretch;justify-content:center;margin:2rem 0;border:2px solid ", ";border-radius:10px;a:active{color:", ";}& > *{display:flex;justify-content:center;align-items:center;margin:0;padding:15px 30px;border-right:1px solid ", ";@media (max-width:500px){padding:10px 15px;}&:last-child{border-right:0;}}a[aria-disabled=\"true\"]{color:", ";pointer-events:none;}"], function (props) {
   return props.theme.olive;
+}, function (props) {
+  return props.theme.pink;
 }, function (props) {
   return props.theme.olive;
 }, function (props) {
@@ -1668,7 +1670,7 @@ var ItemsPage = function ItemsPage(props) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/items.js ***!
   \******************************/

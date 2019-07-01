@@ -28,6 +28,7 @@ const StyledHeader = styled.header`
     justify-content: space-between;
     background-color: ${props => props.theme.grey};
     padding: 1rem;
+    box-shadow: 0px 0px 5px 0px ${props => props.theme.grey};
     .main-logo,
     .order-button {
       width: fit-content;

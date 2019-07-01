@@ -16,7 +16,7 @@ const Meta = () => (
     />
 
     <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
-    <title>Shop</title>
+    <title>Store Wheels</title>
   </Head>
 );
 

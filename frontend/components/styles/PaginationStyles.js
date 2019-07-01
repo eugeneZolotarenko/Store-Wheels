@@ -9,6 +9,9 @@ const PaginationStyles = styled.div`
   margin: 2rem 0;
   border: 2px solid ${props => props.theme.olive};
   border-radius: 10px;
+  a:active {
+    color: ${props => props.theme.pink};
+  }
   & > * {
     display: flex;
     justify-content: center;

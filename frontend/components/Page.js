@@ -20,10 +20,6 @@ const StyledPage = styled.div`
   color: black;
 `;
 const Inner = styled.div`
-  // background: ${props => props.theme.olive};
-  // max-width: ${props => props.theme.maxWidth};
-  // margin: 0 auto;
-  // padding: 2rem;
   padding-top: 70px;
 `;
 injectGlobal`

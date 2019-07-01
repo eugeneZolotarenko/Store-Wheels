@@ -29,7 +29,7 @@ const Pagination = props => (
         <PaginationStyles>
           <Head>
             <title>
-              Stock Wheels | {page} of {pages}
+              Store Wheels | {page} of {pages}
             </title>
           </Head>
           <Link

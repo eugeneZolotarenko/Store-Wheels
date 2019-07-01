@@ -41,6 +41,7 @@ const NavStyles = styled.ul`
     }
     @media (max-width: 900px) {
       padding: 1rem 1.1rem;
+      font-size: .9em;
     }
     @media (max-width: 700px) {
       padding: 0.8rem 10px;

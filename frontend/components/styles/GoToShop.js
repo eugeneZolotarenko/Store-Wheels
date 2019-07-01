@@ -14,7 +14,12 @@ const GoToShop = styled.section`
   }
   .go-ahead {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    padding: 34px;
+    p {
+      margin: 5px;
+    }
     button {
       margin: 0 15px;
       height: fit-content;
