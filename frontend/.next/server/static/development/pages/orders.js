@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -903,7 +903,7 @@ var OrderPage = function OrderPage(props) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 7:
 /*!*******************************!*\
   !*** multi ./pages/orders.js ***!
   \*******************************/

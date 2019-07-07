@@ -30,10 +30,8 @@ class RemoveFromCart extends React.Component {
     id: PropTypes.string.isRequired
   };
   update = (cache, payload) => {
-    console.log("Running remove from cart update func");
     //  read the cache
     const data = cache.readQuery({ query: CURRENT_USER_QUERY });
-    console.log(data);
     // remove that item from the cart
     const cartItemId = payload.data.removeFromCart.id;
     data.me.cart = data.me.cart.filter(cartItem => cartItem.id !== cartItemId);
@@ -72,3 +70,4 @@ class RemoveFromCart extends React.Component {
 }
 
 export default RemoveFromCart;
+export { REMOVE_FROM_CART_MUTATION }

@@ -1,5 +1,4 @@
 import { mount } from "enzyme";
-import toJSON from "enzyme-to-json";
 import wait from "waait";
 import PleaseSignIn from "../components/PleaseSignIn";
 import { CURRENT_USER_QUERY } from "../components/User";
@@ -27,6 +26,24 @@ describe("<PleaseSignIn />", () => {
         <PleaseSignIn />
       </MockedProvider>
     );
-    console.log(wrapper.debug());
+    await wait();
+    wrapper.update();
+    expect(wrapper.text()).toContain("Please Sign In before Continuing");
+    const SignIn = wrapper.find("Signin");
+    expect(SignIn.exists()).toBe(true);
+  });
+
+  it("renders the child component when the user is signed in", async () => {
+    const Hey = () => <p>Hey!</p>;
+    const wrapper = mount(
+      <MockedProvider mocks={signedInMocks}>
+        <PleaseSignIn>
+          <Hey />
+        </PleaseSignIn>
+      </MockedProvider>
+    );
+    await wait();
+    wrapper.update();
+    expect(wrapper.contains(<Hey />)).toBe(true);
   });
 });
