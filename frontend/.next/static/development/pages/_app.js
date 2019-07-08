@@ -876,11 +876,11 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 
 
@@ -901,7 +901,7 @@ function (_React$Component) {
     _this.state = {
       condition: false
     };
-    _this.handleClick = _this.handleClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleClick = _this.handleClick.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -983,42 +983,42 @@ function (_React$Component) {
             lineNumber: 35
           },
           __self: this
-        }, "Account")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Signout__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 37
-          },
-          __self: this
-        })), me && me.permissions.some(function (permission) {
+        }, "Account"))), me && me.permissions.some(function (permission) {
           return ["ADMIN", "ITEMUPDATE"].includes(permission);
         }) && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
           activeClassName: "active",
           href: "/sell",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 44
+            lineNumber: 43
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
           onClick: _this2.handleClick,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 45
+            lineNumber: 44
           },
           __self: this
-        }, "Sell")), !me && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        }, "Sell")), me && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Signout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 48
+          },
+          __self: this
+        }), !me && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ActiveLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
           activeClassName: "active",
           href: "/signup",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 49
+            lineNumber: 51
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
           onClick: _this2.handleClick,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 50
+            lineNumber: 52
           },
           __self: this
         }, "Sign In"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -1026,28 +1026,28 @@ function (_React$Component) {
           className: _this2.state.condition ? "burger-container change-burger" : "burger-container",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 56
+            lineNumber: 58
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "burger-line-1",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 64
+            lineNumber: 66
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "burger-line-2",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 65
+            lineNumber: 67
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "burger-line-3",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 66
+            lineNumber: 68
           },
           __self: this
         })));

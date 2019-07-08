@@ -60,6 +60,9 @@ const Item = styled.div`
       border-bottom-right-radius: 10px;
     }
   }
+  @media(min-width: 701px){
+    max-width: 510px;
+  }
 `;
 
 export default Item;

@@ -16,7 +16,7 @@ const GoToShop = styled.section`
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 34px;
+    padding: 34px  0;
     p {
       margin: 5px;
     }

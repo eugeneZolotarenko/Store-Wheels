@@ -34,7 +34,6 @@ class Nav extends React.Component {
                   <Link activeClassName="active" href="/me">
                     <a onClick={this.handleClick}>Account</a>
                   </Link>
-                  <Signout />
                 </>
               )}
               {me &&
@@ -45,6 +44,9 @@ class Nav extends React.Component {
                     <a onClick={this.handleClick}>Sell</a>
                   </Link>
                 )}
+              {me && (
+                <Signout />
+              )}
               {!me && (
                 <Link activeClassName="active" href="/signup">
                   <a onClick={this.handleClick}>Sign In</a>

@@ -61,6 +61,7 @@ const Form = styled.form`
     background-color: ${props => props.theme.olive};
     display: flex;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
     padding: 1rem;
     margin: 3rem auto 0 auto;
