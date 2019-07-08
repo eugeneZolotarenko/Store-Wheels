@@ -33,7 +33,7 @@ server.express.use(async (req, res, next) => {
   next();
 });
 
-// start srver
+// start server
 
 server.start(
   // {
