@@ -64,7 +64,7 @@ class Main extends Component {
                     className="arrow-next-block"
                     onClick={() => scrollTo({ x: 0, y: 420, smooth: true })}
                   >
-                    <img src="../static/arrow.svg" />
+                    <img src="../static/Arrow.svg" />
                   </ArrowNextBlock>
                 )}
               </ScrollTo>

@@ -1042,7 +1042,7 @@ function (_Component) {
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          src: "../static/arrow.svg",
+          src: "../static/Arrow.svg",
           __source: {
             fileName: _jsxFileName,
             lineNumber: 67
