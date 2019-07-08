@@ -1,23 +1,75 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_4a2ab6ce0cb456fbfead.js"
-  ],
+  "devFiles": [],
   "pages": {
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-2ef50c24cc8d478adafc.js",
+      "static/chunks/commons.99b88f207f0855ef5c22.js",
+      "static/runtime/main-7d28ba70174748b01bb6.js"
     ],
-    "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+    "/index": [
+      "static/runtime/webpack-2ef50c24cc8d478adafc.js",
+      "static/chunks/commons.99b88f207f0855ef5c22.js",
+      "static/runtime/main-7d28ba70174748b01bb6.js"
+    ],
+    "/item": [
+      "static/runtime/webpack-2ef50c24cc8d478adafc.js",
+      "static/chunks/commons.99b88f207f0855ef5c22.js",
+      "static/runtime/main-7d28ba70174748b01bb6.js"
     ],
     "/items": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-2ef50c24cc8d478adafc.js",
+      "static/chunks/commons.99b88f207f0855ef5c22.js",
+      "static/runtime/main-7d28ba70174748b01bb6.js"
+    ],
+    "/me": [
+      "static/runtime/webpack-2ef50c24cc8d478adafc.js",
+      "static/chunks/commons.99b88f207f0855ef5c22.js",
+      "static/runtime/main-7d28ba70174748b01bb6.js"
+    ],
+    "/order": [
+      "static/runtime/webpack-2ef50c24cc8d478adafc.js",
+      "static/chunks/commons.99b88f207f0855ef5c22.js",
+      "static/runtime/main-7d28ba70174748b01bb6.js"
+    ],
+    "/orders": [
+      "static/runtime/webpack-2ef50c24cc8d478adafc.js",
+      "static/chunks/commons.99b88f207f0855ef5c22.js",
+      "static/runtime/main-7d28ba70174748b01bb6.js"
     ],
     "/permissions": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-2ef50c24cc8d478adafc.js",
+      "static/chunks/commons.99b88f207f0855ef5c22.js",
+      "static/runtime/main-7d28ba70174748b01bb6.js"
+    ],
+    "/reset": [
+      "static/runtime/webpack-2ef50c24cc8d478adafc.js",
+      "static/chunks/commons.99b88f207f0855ef5c22.js",
+      "static/runtime/main-7d28ba70174748b01bb6.js"
+    ],
+    "/sell": [
+      "static/runtime/webpack-2ef50c24cc8d478adafc.js",
+      "static/chunks/commons.99b88f207f0855ef5c22.js",
+      "static/runtime/main-7d28ba70174748b01bb6.js"
+    ],
+    "/signup": [
+      "static/runtime/webpack-2ef50c24cc8d478adafc.js",
+      "static/chunks/commons.99b88f207f0855ef5c22.js",
+      "static/runtime/main-7d28ba70174748b01bb6.js"
+    ],
+    "/update": [
+      "static/runtime/webpack-2ef50c24cc8d478adafc.js",
+      "static/chunks/commons.99b88f207f0855ef5c22.js",
+      "static/runtime/main-7d28ba70174748b01bb6.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-2ef50c24cc8d478adafc.js",
+      "static/chunks/commons.99b88f207f0855ef5c22.js",
+      "static/runtime/main-7d28ba70174748b01bb6.js"
+    ],
+    "/": [
+      "static/runtime/webpack-2ef50c24cc8d478adafc.js",
+      "static/chunks/commons.99b88f207f0855ef5c22.js",
+      "static/runtime/main-7d28ba70174748b01bb6.js"
     ]
   }
 }
