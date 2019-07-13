@@ -37,9 +37,12 @@ const ALL_USERS_QUERY = gql`
   }
 `;
 
-const PermissionBlock = styled.footer`
+const PermissionBlock = styled.div`
   min-height: calc(100vh - 248px);
   padding-top: 25px;
+  .table-wrapper{
+    overflow-x: auto;
+  }
 `;
 
 const headerStyle = {
@@ -56,23 +59,25 @@ const Permissions = props => (
         <Error error={error} />
         <div>
           <h3 style={headerStyle}>Manage Permissions of Users</h3>
-          <Table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Email</th>
-                {possiblePermissions.map(permission => (
-                  <th key={permission}>{permission}</th>
+          <div className="table-wrapper">
+            <Table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  {possiblePermissions.map(permission => (
+                    <th key={permission}>{permission}</th>
+                  ))}
+                  <th>Upadate</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.users.map(user => (
+                  <UserPermissions user={user} key={user.id} />
                 ))}
-                <th>Upadate</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.users.map(user => (
-                <UserPermissions user={user} key={user.id} />
-              ))}
-            </tbody>
-          </Table>
+              </tbody>
+            </Table>
+          </div>
         </div>
       </PermissionBlock>
     )}

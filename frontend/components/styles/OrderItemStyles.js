@@ -40,6 +40,12 @@ const OrderItemStyles = styled.li`
       background: ${props => props.theme.olive};
       padding: 1rem 0.4rem;
       border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media(max-width: 370px){
+        font-size: 1.3rem;
+      }
     }
     strong {
       display: block;

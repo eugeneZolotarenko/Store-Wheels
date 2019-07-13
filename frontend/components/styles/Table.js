@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Table = styled.table`
   border-spacing: 0;
-  width: 100%;
+  width: 100vw;
   border: 1px solid ${props => props.theme.olive};
   box-shadow: 0px 4px 18px 0px ${props => props.theme.olive};
   padding: 5px;

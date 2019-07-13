@@ -9,6 +9,9 @@ const EncBlock = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 849px) {
+      padding-left: 2rem;
+    }
     .encourage-wrapper {
       width: 1280px;
       display: flex;
@@ -28,6 +31,13 @@ const EncBlock = styled.div`
             padding: 1.5rem 0 3.5rem 2.5rem;
             font-size: 35px;
           }
+          @media (max-width: 849px) {
+            padding: 1.5rem 1.5rem 0 0;
+            font-size: 32px;
+          }
+          @media (max-width: 500px) {
+            padding: 1.5rem 1.5rem 0 0;
+          }
         }
       }
       .arrow-next-block {
@@ -37,8 +47,8 @@ const EncBlock = styled.div`
         outline: none;
         height: fit-content;
         margin-top: 140px;
-        @media (max-width: 592px) {
-          margin-top: 0;
+        @media (max-width: 484px) {
+          display: none;
         }
       }
       .main-car {
@@ -51,6 +61,9 @@ const EncBlock = styled.div`
         @media (max-width: 850px) {
           width: 80%;
         }
+        @media (max-width: 500px) {
+          width: 100%;
+        }
       }
       @media (max-width: 1100px) {
         padding-left: 0;
@@ -61,6 +74,7 @@ const EncBlock = styled.div`
         justify-content: center;
       }
       @media (max-width: 500px) {
+        justify-content: space-between;
         padding-bottom: 6rem;
       }
     }

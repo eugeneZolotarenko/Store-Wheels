@@ -85,7 +85,7 @@ class CreateItem extends Component {
             >
               <Error error={error} />
               <fieldset disabled={loading} aria-busy={loading}>
-                <label className="uploud-btn" htmlFor="file">
+                <label className="upload-btn" htmlFor="file">
                   Upload Your Image...
                   <input
                     type="file"

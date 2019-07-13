@@ -8,6 +8,7 @@ const OrderStyles = styled.div`
   padding: 2rem;
   border-top: 10px solid ${props => props.theme.olive};
   border-bottom: 10px solid ${props => props.theme.olive};
+  overflow-x: auto;
   & > p {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -33,7 +34,19 @@ const OrderStyles = styled.div`
       width: 100%;
       height: 100%;
       object-fit: contain;
+      @media(max-width: 500px) {
+        width: 150px;
+        height: 150px;
+        justify-self: center;
+      }
     }
+    @media(max-width: 500px) {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+      p, h2{
+        text-align: center;
+      }
+      }
   }
 `;
 export default OrderStyles;

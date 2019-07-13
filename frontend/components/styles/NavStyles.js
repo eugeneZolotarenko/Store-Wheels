@@ -7,7 +7,7 @@ const NavStyles = styled.ul`
   justify-self: end;
   font-size: 1.5rem;
   z-index: 999;
-  min-height: 50px;
+  min-height: fit-content;
   @media (max-width: 700px) {
     width: fit-content;
     align-self: center;
@@ -20,28 +20,25 @@ const NavStyles = styled.ul`
     }
   a,
   .signout-btn {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 0 2rem;
     display: flex;
     align-items: center;
     position: relative;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1.5rem;
     background: none;
     border: 0;
     cursor: pointer;
     font-family: Montserrat;
     color: ${props => props.theme.semiblack};
-    /* border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent; */
     transition: all 0.3s;
     &:hover {
       color: ${props => props.theme.pink};
-      /* border-color: ${props => props.theme.semiblack}; */
     }
     @media (max-width: 900px) {
-      padding: 1rem 1.1rem;
-      font-size: .9em;
+      padding: 1rem 1.1rem 0 1.1rem;
+      font-size: 1.45rem;
     }
     @media (max-width: 700px) {
       padding: 0.8rem 10px;
@@ -98,9 +95,6 @@ const NavStyles = styled.ul`
 
   // START Settings for responsive menu
 
-  @media (max-width: 1300px) {
-    font-size: 1.6rem;
-  }
 
   .menu {
     @media (min-width: 701px) {
@@ -119,6 +113,7 @@ const NavStyles = styled.ul`
       a, button {
         color: ${props => props.theme.semiblack};
         font-weight: 700;
+        font-size: 1.6rem;
       }
     }
   }

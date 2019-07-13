@@ -3,12 +3,10 @@ import styled, { keyframes } from "styled-components";
 const loading = keyframes`
   from {
     background-position: 0 0;
-    /* rotate: 0; */
   }
 
   to {
     background-position: 100% 100%;
-    /* rotate: 360deg; */
   }
 `;
 
@@ -49,13 +47,13 @@ const Form = styled.form`
     position: absolute;
     z-index: -1;
   }
-  .uploud-btn,
+  .upload-btn,
   button,
   input[type="submit"] {
     min-height: 38px;
     border: none;
     width: fit-content;
-    font-size: 19px;
+    font-size: 2rem;
     font-weight: 700;
     color: white;
     background-color: ${props => props.theme.olive};
@@ -73,16 +71,10 @@ const Form = styled.form`
       box-shadow: ${props => props.theme.buttonShadow};
     }
   }
-  /* button,
-  input[type="submit"] {
-    width: auto;
-    background: red;
-    color: white;
-    border: 0;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 0.5rem 1.2rem;
-  } */
+  .upload-btn{
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+  }
   fieldset {
     border-radius: 10px;
     border: 0;

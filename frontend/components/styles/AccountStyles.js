@@ -27,12 +27,16 @@ const AccountStyles = styled.div`
       justify-self: center;
       color: white;
       padding: 0.2rem;
+      @media (max-width: 500px){
+        padding: 0.2rem 0;
+      }
     }
   }
   p {
     font-size: 1.8rem;
     margin: 0;
     padding: 2.5rem 1.5rem;
+    overflow: auto;
   }
 `;
 

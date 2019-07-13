@@ -26,6 +26,7 @@ const StyleFooter = styled.footer`
     text-align: center;
     transition: 0.3s;
     line-height: 3rem;
+    padding: 0 7px;
     &:hover {
       color: ${props => props.theme.pink};
     }

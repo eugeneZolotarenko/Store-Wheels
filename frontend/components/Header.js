@@ -29,6 +29,7 @@ const StyledHeader = styled.header`
     background-color: ${props => props.theme.grey};
     padding: 1rem;
     box-shadow: 0px 0px 5px 0px ${props => props.theme.grey};
+    min-height: 70px;
     .main-logo,
     .order-button {
       width: fit-content;
@@ -39,7 +40,7 @@ const StyledHeader = styled.header`
         background: none;
         border: none;
         display: flex;
-        padding: 1rem 2rem;
+        padding: 1rem 2rem 0.5rem 2rem;
         text-transform: uppercase;
         font-weight: 600;
         font-family: Montserrat;
@@ -56,7 +57,7 @@ const StyledHeader = styled.header`
           background: ${props => props.theme.olive};
         }
         @media (max-width: 900px) {
-          padding: 1rem 1.2rem;
+          padding: 1rem 1.2rem 0.5rem 1.2rem;
         }
       }
       @media (max-width: 700px) {

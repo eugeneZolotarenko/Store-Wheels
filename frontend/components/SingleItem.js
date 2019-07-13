@@ -16,6 +16,10 @@ const SingleItemStyles = styled.div`
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
   min-height: calc(100vh - 70px);
+  @media (max-width: 450px){
+    grid-auto-flow: row;
+    min-height: 100%;
+  }
   .item-image {
     width: 80%;
     height: 80%;
@@ -25,6 +29,10 @@ const SingleItemStyles = styled.div`
     @media (max-width: 800px) {
       width: 100%;
       height: 100%;
+    }
+    @media (max-width: 450px){
+      margin-top: 10px;
+      height: 30vh;
     }
   }
   .datails {
@@ -60,10 +68,10 @@ const SingleItemStyles = styled.div`
           background: ${props => props.theme.pink};
           box-shadow: ${props => props.theme.buttonShadow};
         }
-        @media (max-width: 400px) {
+        /* @media (max-width: 400px) {
           margin-left: 0;
           margin-right: 0;
-        }
+        } */
       }
       .loading-add-btn {
         min-width: 125.5px;
