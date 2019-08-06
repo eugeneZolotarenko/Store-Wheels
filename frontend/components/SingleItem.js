@@ -15,7 +15,7 @@ const SingleItemStyles = styled.div`
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 248px);
   @media (max-width: 450px){
     grid-auto-flow: row;
     min-height: 100%;
