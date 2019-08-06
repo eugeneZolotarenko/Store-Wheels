@@ -20,8 +20,13 @@ const Form = styled.form`
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 600;
-  min-height: calc(100vh - 248px);
+  height: fit-content;
   border-radius: 10px;
+  min-height: calc(80vh - 248px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   label {
     display: block;
     margin-bottom: 1rem;

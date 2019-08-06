@@ -25,7 +25,7 @@ const ALL_ITEMS_QUERY = gql`
 
 const override = css`
   display: block;
-  margin: 20vh auto;
+  margin: auto;
   min-height: calc(100vh - 248px);
 `;
 

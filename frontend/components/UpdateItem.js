@@ -5,6 +5,12 @@ import Router from "next/router";
 import Form from "./styles/Form";
 import formatMoney from "../lib/formatMoney";
 import Error from "./ErrorMessage";
+import styled from "styled-components";
+
+const CreateBlock = styled.div`
+  min-height: calc(100vh - 248px);
+  padding: 5% 0 5% 0;
+`;
 
 const SINGLE_ITEM_QUERY = gql`
   query SINGLE_ITEM_QUERY($id: ID!) {
@@ -59,6 +65,7 @@ class UpdateItem extends Component {
   };
   render() {
     return (
+      <CreateBlock>
       <Query
         query={SINGLE_ITEM_QUERY}
         variables={{
@@ -120,6 +127,7 @@ class UpdateItem extends Component {
           );
         }}
       </Query>
+    </CreateBlock>
     );
   }
 }
