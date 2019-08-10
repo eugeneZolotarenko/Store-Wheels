@@ -553,21 +553,21 @@ var Foooter = function Foooter() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyleFooter, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "wave",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 50
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://github.com/eugeneZolotarenko",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 51
     },
     __self: this
   }, "Designed & Developed by Eugene Zolotarenko"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -575,7 +575,7 @@ var Foooter = function Foooter() {
     href: "https://wesbos.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 54
     },
     __self: this
   }, "With Wes Bos's helping"));
@@ -637,7 +637,7 @@ next_router__WEBPACK_IMPORTED_MODULE_6___default.a.onRouteChangeError = function
 var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].header.withConfig({
   displayName: "Header__StyledHeader",
   componentId: "sc-2cpreo-0"
-})([".bar{position:fixed;z-index:1000;width:100%;display:flex;justify-content:space-between;background-color:", ";padding:1rem;box-shadow:0px 0px 5px 0px ", ";min-height:70px;.main-logo,.order-button{width:fit-content;}.nav-orders{display:flex;.order-button{background:none;border:none;display:flex;padding:1rem 2rem 0.5rem 2rem;text-transform:uppercase;font-weight:600;font-family:Montserrat;font-size:1.1em;cursor:pointer;color:", ";align-items:center;transition:0.3s;outline:none;&:hover{color:", ";}&:hover .count{background:", ";}@media (max-width:900px){padding:1rem 1.2rem 0.5rem 1.2rem;}}@media (max-width:700px){flex-direction:row-reverse;}}}"], function (props) {
+})([".bar{position:fixed;z-index:1000;width:100%;display:flex;justify-content:space-between;background-color:", ";padding:1rem;box-shadow:0px 0px 5px 0px ", ";min-height:70px;.main-logo,.order-button{width:fit-content;}.main-logo{display:flex;align-items:center;justify-content:center;}.nav-orders{display:flex;.order-button{background:none;border:none;display:flex;padding:1rem 2rem 0.5rem 2rem;text-transform:uppercase;font-weight:600;font-family:Montserrat;font-size:1.1em;cursor:pointer;color:", ";align-items:center;transition:0.3s;outline:none;&:hover{color:", ";}&:hover .count{background:", ";}@media (max-width:900px){padding:1rem 1.2rem 0.5rem 1.2rem;}}@media (max-width:700px){flex-direction:row-reverse;}}}"], function (props) {
   return props.theme.grey;
 }, function (props) {
   return props.theme.grey;
@@ -653,7 +653,7 @@ var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_User__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 76
     },
     __self: this
   }, function (_ref) {
@@ -661,55 +661,55 @@ var Header = function Header() {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73
+        lineNumber: 78
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
       className: "bar",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 74
+        lineNumber: 79
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
       href: "/",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75
+        lineNumber: 80
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
       className: "main-logo",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76
+        lineNumber: 81
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
       src: "../static/logo.png",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 77
+        lineNumber: 82
       },
       __self: this
     }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "nav-orders",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80
+        lineNumber: 85
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81
+        lineNumber: 86
       },
       __self: this
     }), me && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_1__["Mutation"], {
       mutation: _Cart__WEBPACK_IMPORTED_MODULE_2__["TOGGLE_CART_MATATION"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84
+        lineNumber: 89
       },
       __self: this
     }, function (toggleCart) {
@@ -718,14 +718,14 @@ var Header = function Header() {
         onClick: toggleCart,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 91
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fas fa-shopping-basket fa-lg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 92
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CartCount__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -734,14 +734,14 @@ var Header = function Header() {
         }, 0),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 93
         },
         __self: this
       }));
     }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Cart__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101
+        lineNumber: 106
       },
       __self: this
     }));
@@ -1098,7 +1098,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  html {\n    font-family: Montserrat;\n    box-sizing: border-box;\n    font-size: 10px;\n    min-width: 320px;\n    ::-webkit-scrollbar {\n      width: 10px;\n      box-shadow: black;\n      border-color: black;\n    }\n    ::-webkit-scrollbar-thumb {\n      border-width: 1px 1px 1px 2px;\n      border-color: #777;\n      background-color: #C1C4C3;\n    }\n    ::-webkit-scrollbar-thumb:hover {\n      background-color: #aaa;\n    }\n    ::-webkit-scrollbar-track {\n      background-color: transparent;\n      border-width: 0;\n    }\n    ::-webkit-scrollbar-track:hover {\n      background-color: #eee;\n    }\n  };\n  *, *:before, *:after{\n    box-sizing: border-box;\n  };\n  body {\n    padding: 0;\n    margin: 0;\n    font-size: 1.7rem;\n  };\n  a{\n    text-decoration: none;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  html {\n    font-family: Montserrat;\n    box-sizing: border-box;\n    font-size: 10px;\n    min-width: 320px;\n    /* ::-webkit-scrollbar {\n      width: 10px;\n      box-shadow: black;\n      border-color: black;\n    }\n    ::-webkit-scrollbar-thumb {\n      border-width: 1px 1px 1px 2px;\n      border-color: #777;\n      background-color: #C1C4C3;\n    }\n    ::-webkit-scrollbar-thumb:hover {\n      background-color: #aaa;\n    }\n    ::-webkit-scrollbar-track {\n      background-color: transparent;\n      border-width: 0;\n    }\n    ::-webkit-scrollbar-track:hover {\n      background-color: #eee;\n    } */\n  };\n  *, *:before, *:after{\n    box-sizing: border-box;\n  };\n  body {\n    padding: 0;\n    margin: 0;\n    font-size: 1.7rem;\n  };\n  a{\n    text-decoration: none;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1127,7 +1127,7 @@ var theme = {
 var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Page__StyledPage",
   componentId: "sc-4u7a64-0"
-})(["background:white;color:black;"]);
+})(["background:white;color:black;min-height:100vh;display:flex;flex-direction:column;justify-content:space-between;"]);
 var Inner = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Page__Inner",
   componentId: "sc-4u7a64-1"
@@ -1152,37 +1152,37 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 72
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 73
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 74
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 75
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 76
         },
         __self: this
       }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 77
         },
         __self: this
       })));

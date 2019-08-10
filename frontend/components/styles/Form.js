@@ -22,7 +22,6 @@ const Form = styled.form`
   font-weight: 600;
   height: fit-content;
   border-radius: 10px;
-  min-height: calc(80vh - 248px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,6 +82,7 @@ const Form = styled.form`
   }
   fieldset {
     border-radius: 10px;
+    width: 100%;
     border: 0;
     padding: 0;
 

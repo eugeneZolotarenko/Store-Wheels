@@ -8,8 +8,8 @@ import Error from "./ErrorMessage";
 import styled from "styled-components";
 
 const SellBlock = styled.div`
-  min-height: calc(100vh - 248px);
   padding: 5% 0 5% 0;
+
 `;
 
 const CREATE_ITEM_MUTATION = gql`

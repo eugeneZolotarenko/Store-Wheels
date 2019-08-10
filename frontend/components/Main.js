@@ -28,6 +28,13 @@ const THREE_ITEMS_QUERY = gql`
   }
 `;
 
+const MainBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 248px);
+`;
+
+
 const override = css`
   display: block;
   margin: 20vh auto;
@@ -44,7 +51,7 @@ const ArrowNextBlock = styled.button`
 class Main extends Component {
   render() {
     return (
-      <>
+      <MainBlock>
         <EncBlock>
           <div className="encourage-block">
             <div className="encourage-wrapper">
@@ -124,7 +131,7 @@ class Main extends Component {
             </p>
           </div>
         </GoToShop>
-      </>
+      </MainBlock>
     );
   }
 }

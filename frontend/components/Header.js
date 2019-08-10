@@ -34,6 +34,11 @@ const StyledHeader = styled.header`
     .order-button {
       width: fit-content;
     }
+    .main-logo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .nav-orders {
       display: flex;
       .order-button {

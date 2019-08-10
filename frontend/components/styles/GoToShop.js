@@ -4,6 +4,7 @@ const GoToShop = styled.section`
   max-width: calc(${props => props.theme.maxWidth} + 30px);
   margin: 0 auto;
   padding: 10px 15px;
+  width: 100%;
   p {
     font-size: 34px;
     line-height: 43px;

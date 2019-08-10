@@ -9,6 +9,9 @@ const StyleFooter = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* margin-top: 100px; */
+  /* clear: both;
+  position: relative; */
   .wave {
     background-image: url(../static/wave-2.svg);
     background-position-x: right;

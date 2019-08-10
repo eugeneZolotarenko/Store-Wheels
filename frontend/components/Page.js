@@ -18,6 +18,10 @@ const theme = {
 const StyledPage = styled.div`
   background: white;
   color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 const Inner = styled.div`
   padding-top: 70px;
@@ -28,7 +32,7 @@ injectGlobal`
     box-sizing: border-box;
     font-size: 10px;
     min-width: 320px;
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
       width: 10px;
       box-shadow: black;
       border-color: black;
@@ -47,7 +51,7 @@ injectGlobal`
     }
     ::-webkit-scrollbar-track:hover {
       background-color: #eee;
-    }
+    } */
   };
   *, *:before, *:after{
     box-sizing: border-box;
