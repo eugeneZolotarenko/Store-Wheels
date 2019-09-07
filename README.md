@@ -1,6 +1,6 @@
 # ![alt text](https://i.imgur.com/d4Ezufz.png)
 
-This project open for me the new world of web technologies with fancy interfaces and custom server side logics.
+This project opened for me the new world of web technologies with fancy interfaces and custom server side logics.
 
 ![alt text](https://i.imgur.com/1Hs5zvs.png)
 
