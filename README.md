@@ -1,6 +1,6 @@
 # ![alt text](https://i.imgur.com/d4Ezufz.png)
 
-This project opened for me the new world of web technologies with fancy interfaces and custom server side logics.
+This project introduced me to the world of web technologies with fancy interfaces and custom server side logics.
 
 ![alt text](https://i.imgur.com/1Hs5zvs.png)
 
@@ -14,4 +14,4 @@ Tech Stack:
 
 ![alt text](https://i.imgur.com/k8apybI.png)
 
-Project was built with helping Wes Bos's course "Fullstack Advanced React & GraphQL"
+This project was designed using skills I learned from Wes Bos' course "Fullstack Advanced React & GraphQL"
